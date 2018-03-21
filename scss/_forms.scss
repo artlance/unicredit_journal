@@ -1,0 +1,77 @@
+/* forms */
+.error {
+    color: $error !important;
+    border-color: $error !important;
+}
+.success {
+    color: $success !important;
+    border-color: $success !important;
+}
+.disabled {
+    color: $gray !important;
+    border-color: $gray !important;
+    cursor: default !important;
+}
+input.input-text {
+    width: 100%;
+    float: left;
+    border-radius: 0;
+    transition: color $d $f, background-color $d $f, border-color $d $f, box-shadow $d $f;
+}
+textarea.textarea {
+    @extend input.input-text;
+    font-family: $fontFamily;
+    overflow: auto;
+    height: auto;
+}
+select.select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    border-radius: 0;
+}
+select.select::-ms-expand {
+    display: none;
+}
+.checkbox,
+.radio {
+    display: block;
+    input {
+        display: none;
+        &:checked + label {
+        }
+        &:disabled + label {
+        }
+    }
+    label {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        &:before {
+            transition: box-shadow $d $f;
+        }
+        &:focus {
+            &:before {
+                box-shadow: 0 0 0 3px $focus;
+            }
+        }
+    }
+}
+a.button,
+input.button,
+button.button {
+    display: inline-block;
+    padding: $spacer/2 $spacer;
+    transition: color $d $f, background-color $d $f, border-color $d $f, box-shadow $d $f;
+    &:focus {
+        box-shadow: 0 0 0 3px $focus;
+    }
+}
+input.button,
+button.button {
+    line-height: normal;
+}

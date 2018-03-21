@@ -1,0 +1,25 @@
+.home-advices-slider {
+    width: 100%;
+    height: 607px;
+    overflow: hidden;
+}
+.slidee {
+    display: block;
+    height: 100%;
+    li {
+        float: left;
+        margin: 0 64px 0 0;
+        width: 320px;
+        height: 100%;
+    }
+}
+.scrollbar {
+    width: 100%;
+    height: 10px;
+    background: #535967;
+}
+.scrollbar .handle {
+    height: 100%;
+    background: #4fb4ac;
+    cursor: pointer;
+}

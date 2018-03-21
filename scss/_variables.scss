@@ -1,0 +1,33 @@
+$fontSize: 18px;
+$lineHeight: 1.3334;
+$spacer: 24px;                                                    $sp: $spacer;
+$fontFamily: 'unicredit_cy', Helvetica, Arial, sans-serif;        $ff: $fontFamily;
+
+$duration: 0.15s;                                                 $d: $duration;
+$function: cubic-bezier(0.4, 0.0, 0.2, 1);                        $f: $function;
+$function-reverse: cubic-bezier(0.2, 0.0, 0.4, 1);                $fr: $function-reverse;
+
+$primary: #242933;                                                $p: $primary;
+$secondary: #434957;                                              $s: $secondary;
+$tertiary: #cfcfd0;                                               $t: $tertiary;
+
+$text: #000000;                                                   $txt: $text;
+$link: #3bb6ac;                                                   $l: $link;
+$link-hover: #66d6cd;                                             $lh: $link-hover;
+$focus: #dff6f4;                                                  $fo: $focus;
+
+$white: #ffffff;                                                  $w: $white;
+$black: #000000;                                                  $b: $black;
+$dark-gray: #333333;                                              $dgr: $dark-gray;
+$gray: #525252;                                                   $gr: $gray;
+$light-gray: #e9e9e9;                                             $lgr: $light-gray;
+$green: #59ccc3;                                                  $gn: $green;
+$red: #cf342d;                                                    $r: $red;
+$blue: #4e72cd;                                                   $bl: $blue;
+$transparent: transparent;                                        $tr: $transparent;
+
+$default: #f00;
+$success: #00c100;
+$info: #0079e8;
+$warning: #f0ad4e;
+$error: #cf342d;

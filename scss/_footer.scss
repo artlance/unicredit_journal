@@ -1,0 +1,136 @@
+/* footer */
+.footer-global {
+    padding-top: 70px;
+    background: $p;
+}
+.footer-logo {
+    padding-right: 10px;
+    a {
+        display: block;
+        max-width: 292px;
+        img {
+            display: block;
+            width: 100%;
+        }
+        &:hover {
+            .footer-logo-title {
+                color: $t;
+            }
+        }
+    }
+}
+.footer-logo-title {
+    display: block;
+    padding-top: 15px;
+    font-weight: 300;
+    color: $w;
+    letter-spacing: 2px;
+    transition: color $d $f;
+}
+.footer-menu {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 9px 0 95px;
+    & > li {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 0 10px 3px 0;
+        & > a {
+            display: block;
+            margin-bottom: 47px;
+            font-size: 20px;
+            line-height: 1.2;
+            text-transform: uppercase;
+            letter-spacing: 0.1px;
+        }
+        ul {
+            display: block;
+            li {
+                margin-bottom: 17px;
+                a {
+                    display: block;
+                    font-weight: 300;
+                    color: $w;
+                    letter-spacing: 0.25px;
+                    &:hover {
+                        color: $t;
+                    }
+                }
+            }
+        }
+    }
+}
+.footer-social {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 85px;
+    margin-bottom: 90px;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 2px;
+        bottom: 8px;
+        left: 0;
+        width: 3px;
+        background: rgba(255, 255, 255, 0.03);
+    }
+    li {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0 28.571%;
+        a {
+            display: block;
+            margin-bottom: 26px;
+            padding-left: 55px;
+            position: relative;
+            font-weight: 300;
+            color: $w;
+            letter-spacing: 0.25px;
+            &:hover {
+                color: $t;
+                .svg-fill {
+                    fill: #68d6ce;
+                }
+            }
+        }
+    }
+}
+.footer-social-ico {
+    display: block;
+    position: absolute;
+    left: 3px;
+    top: 1px;
+    width: 25px;
+    .svg {
+        svg {
+            width: 100%;
+        }
+    }
+}
+.footer-social-ico1 {
+    width: 24px;
+}
+.footer-social-ico2 {
+    width: 27px;
+    left: 0;
+    top: 3px;
+}
+.footer-social-ico3 {
+    left: 2px;
+}
+.footer-social-ico4 {}
+.footer-copyright {
+    padding: 48px 0 55px;
+    background: rgba(0, 0, 0, 0.1);
+    p {
+        font-weight: 300;
+        color: $w;
+        letter-spacing: 0.4px;
+    }
+}
+.footer-copyright-sep {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 9px;
+}

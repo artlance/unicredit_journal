@@ -44,6 +44,7 @@
         transform: rotate(45deg) translate3d(100%, 0, 0);
         transform-origin: 100% 100%;
         transition: transform $d $f;
+        transition-delay: $d;
     }
 }
 .arrow-bottom {
@@ -65,13 +66,28 @@ a:hover {
     .arrow-top {
         &:after {
             transform: rotate(45deg) translate3d(0, 0, 0);
-            transition-delay: $d - 0.05s;
         }
     }
     .arrow-bottom {
         &:after {
             transform: rotate(-45deg) translate3d(0, 0, 0);
-            transition-delay: $d - 0.05s;
+        }
+    }
+}
+a.link-hovered {
+    .arrow-line {
+        &:after {
+            transition-delay: $d*2;
+        }
+    }
+    .arrow-top {
+        &:after {
+            transition-delay: 0;
+        }
+    }
+    .arrow-bottom {
+        &:after {
+            transition-delay: 0;
         }
     }
 }

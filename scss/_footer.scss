@@ -80,7 +80,8 @@
         max-width: 100%;
         padding: 0 28.571%;
         a {
-            display: block;
+            display: inline-block;
+            vertical-align: top;
             margin-bottom: 26px;
             padding-left: 55px;
             position: relative;

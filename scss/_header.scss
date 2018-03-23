@@ -100,17 +100,16 @@ input.header-search-text {
         height: 1px;
         background: #909090;
         transform: rotate(45deg);
-        transition: transform $d $f;
+        transition: all $d $f;
     }
     &:after {
         transform: rotate(-45deg);
     }
     &:hover {
-        &:before {
-            transform: rotate(45deg) scale(1.1);
-        }
+        &:before,
         &:after {
-            transform: rotate(-45deg) scale(1.1);
+            left: -3px;
+            right: -3px;
         }
     }
 }
@@ -169,11 +168,7 @@ input.header-search-text {
 }
 .header-submenu-panel {
     display: none;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 100%;
-    z-index: 2000;
+    margin-bottom: 30px;
     background: $blue;
     padding: 40px 0 10px;
 }
@@ -231,6 +226,7 @@ a.submenu-business {
     z-index: 9000;
     overflow: auto;
     background: #1e222b;
+    transform: translate3d(0, 0, 0);
 }
 .navigation-content {
     background: $p;
@@ -400,7 +396,7 @@ a.submenu-business {
         height: 100%;
         background: $green;
         transform: translate3d(0, -10px, 0);
-        transition: transform $d $f, background-color $d $f;
+        transition: all $d $f;
     }
     &:after {
         transform: translate3d(0, 10px, 0);
@@ -420,11 +416,10 @@ a.submenu-business {
         &:hover {
             .navigation-toggle-icon {
                 background-color: $tr;
+                &:before,
                 &:after {
-                    transform: rotate(-45deg) scale(1.2);
-                }
-                &:before {
-                    transform: rotate(45deg) scale(1.2);
+                    left: -3px;
+                    right: -3px;
                 }
             }
         }

@@ -38,6 +38,8 @@
     }
 }
 .home-slide-title {
+    margin-right: -40px;
+    padding-right: 40px;
     margin-bottom: 40px;
     font-size: 46px;
     line-height: 1.044;
@@ -46,6 +48,7 @@
     max-height: 192px;
     overflow: hidden;
     a {
+        display: block;
         color: $text;
         &:hover {
             color: $gray;
@@ -161,7 +164,7 @@
 .home-popular-item-title {
     display: block;
     margin-right: -35px;
-    padding-right: 35px;
+    padding-right: 45px;
     font-size: 22px;
     line-height: 1.273;
     font-weight: bold;
@@ -217,7 +220,7 @@
 }
 .home-article-content {
     height: 194px;
-    padding-top: 33px;
+    padding-top: 28px;
     border-bottom: 10px solid #e4e4e4;
 }
 .home-article-category {

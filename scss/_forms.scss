@@ -15,8 +15,20 @@
 input.input-text {
     width: 100%;
     float: left;
+    height: 53px;
+    padding: 12px 3px 15px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    color: $w;
+    border: 0;
+    border-bottom: 2px solid $w;
+    background: $tr;
     border-radius: 0;
     transition: color $d $f, background-color $d $f, border-color $d $f, box-shadow $d $f;
+    &::placeholder {
+        color: $w;
+    }
 }
 textarea.textarea {
     @extend input.input-text;
@@ -40,11 +52,24 @@ select.select::-ms-expand {
     input {
         display: none;
         &:checked + label {
+            &:after {
+                opacity: 1;
+            }
         }
         &:disabled + label {
+            cursor: default;
         }
     }
     label {
+        cursor: pointer;
+        display: block;
+        position: relative;
+        padding-left: 41px;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 300;
+        color: $w;
+        letter-spacing: -0.2px;
         -webkit-touch-callout: none;
         -webkit-user-select: none;
         -khtml-user-select: none;
@@ -52,11 +77,30 @@ select.select::-ms-expand {
         -ms-user-select: none;
         user-select: none;
         &:before {
-            transition: box-shadow $d $f;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 21px;
+            height: 21px;
+            border: 1px solid $w;
         }
-        &:focus {
-            &:before {
-                box-shadow: 0 0 0 3px $focus;
+        &:after {
+            opacity: 0;
+            content: "";
+            position: absolute;
+            left: 3px;
+            top: 5px;
+            width: 15px;
+            height: 12px;
+            background: url('../images/checkbox.svg') 0 0 no-repeat;
+            background-size: 15px 12px;
+            transition: opacity $d $f;
+        }
+        a {
+            color: #3fd6ca;
+            &:hover {
+                color: $lh;
             }
         }
     }
@@ -65,13 +109,88 @@ a.button,
 input.button,
 button.button {
     display: inline-block;
-    padding: $spacer/2 $spacer;
+    vertical-align: top;
+    padding: 14px 38px 16px;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $w;
+    letter-spacing: 0.4px;
+    text-align: center;
+    border: 0;
+    background: $green;
     transition: color $d $f, background-color $d $f, border-color $d $f, box-shadow $d $f;
-    &:focus {
-        box-shadow: 0 0 0 3px $focus;
+    &:hover {
+        background-color: $lh;
+    }
+    &.button-bordered {
+        padding: 12px 36px 14px;
+        border: 2px solid $w;
+        background: $tr;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
     }
 }
 input.button,
 button.button {
     line-height: normal;
+}
+.button-arrow,
+.button-arrow-left {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 34px;
+    background: url('../images/arrow-button.svg') 100% 50% no-repeat;
+    background-size: 9px 15px;
+}
+.button-arrow-left {
+    padding-right: 0;
+    padding-left: 34px;
+    background-image: url('../images/arrow-button-left.svg');
+    background-position: 0 50%;
+}
+.drop {
+    &.active {
+        .drop-block {
+            display: block;
+        }
+    }
+}
+.drop-block {
+    display: none;
+}
+.jspContainer {
+    overflow: hidden;
+    position: relative;
+}
+.jspPane {
+    position: absolute;
+}
+.jspCap {
+    display: none;
+}
+.jspTrack {
+    background: #5c80da;
+    position: relative;
+}
+.jspDrag {
+    background: #3fd6ca;
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+.jspCorner {
+    background: $tr;
+    float: left;
+    height: 100%;
+}
+.jspVerticalBar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
 }

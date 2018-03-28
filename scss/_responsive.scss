@@ -1397,6 +1397,57 @@
     .services-order-step-buttons {
         padding-top: 28px;
     }
+    .modal {
+        &-full {
+            width: 737px;
+        }
+    }
+    .modal-compare {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 24px;
+        padding-bottom: 38px;
+        overflow: hidden;
+        .close {
+            top: 52px;
+        }
+        .modal-title {
+            text-align: left;
+            padding-left: 30px;
+            padding-right: 50px;
+            max-width: 500px;
+            margin-bottom: 35px;
+        }
+    }
+    .compare-table {
+        thead {
+            tr {
+                th {
+                    width: 90px;
+                    &:first-child {
+                        padding-left: 30px;
+                        width: auto;
+                    }
+                    &:last-child {
+                        width: 150px;
+                        padding-right: 30px;
+                    }
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    &:first-child {
+                        padding-left: 30px;
+                    }
+                    &:last-child {
+                        padding-right: 30px;
+                    }
+                }
+            }
+        }
+    }
 }
 @include media-breakpoint-down(sm) {    //max-width: 767px
     .container {
@@ -1901,6 +1952,98 @@
     }
     .services-order-step-2-back {
         margin-right: 20px;
+    }
+    .modal-table-overflow {
+        overflow: visible;
+        -webkit-overflow-scrolling: auto;
+        overflow-scrolling: auto;
+    }
+    .modal-compare {
+        padding-bottom: 0;
+        .modal-title {
+            line-height: 1.12;
+            font-size: 25px;
+            padding-left: 25px;
+        }
+        .close {
+            top: 42px;
+            right: 14px;
+        }
+    }
+    .modal-success {
+        width: 400px;
+        padding-top: 55px;
+        padding-bottom: 60px;
+    }
+    .modal-success-title {
+        line-height: 1.12;
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+    .compare-table {
+        display: block;
+        position: relative;
+        padding-left: 115px;
+        thead {
+            width: 115px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: block;
+            tr {
+                display: block;
+                th {
+                    height: 105px;
+                    width: auto;
+                    padding: 13px 0 0;
+                    display: block;
+                    &:first-child {
+                        width: auto;
+                        padding: 0;
+                        height: 82px;
+                        padding-top: 23px;
+                        background: $white;
+                        text-align: center;
+                        border-bottom: 1px solid #e8e8e8;
+                    }
+                    &:last-child {
+                        width: auto;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+        tbody {
+            display: flex;
+            overflow: auto;
+            -webkit-overflow-scrolling: auto;
+            overflow-scrolling: auto;
+            tr {
+                display: block;
+                td {
+                    font-weight: normal;
+                    border-top: 0;
+                    font-size: 13px;
+                    display: block;
+                    padding: 40px 10px 0;
+                    width: 140px;
+                    height: 105px;
+                    border-right: 1px solid #e8e8e8;
+                    &:first-child {
+                        height: 82px;
+                        padding: 0 10px;
+                        border-right-color: $white;
+                        border-bottom: 1px solid #e8e8e8;
+                    }
+                    &:last-child {
+                        padding: 40px 10px;
+                    }
+                }
+            }
+        }
+    }
+    .compare-icon {
+        margin-bottom: 3px;
     }
 }
 @include media-breakpoint-down(xs) {    //max-width: 575px

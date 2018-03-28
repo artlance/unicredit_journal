@@ -69,9 +69,13 @@ $(document).ready(function(){
         touchDragging: true,
         elasticBounds: true
     };
-    var sly = new Sly($('.home-advices-slider'), options).init();
+    if ($('.home-advices-slider').length) {
+        var sly = new Sly($('.home-advices-slider'), options).init();
+    }
     $(window).resize(function() {
-        sly.reload();
+        if ($('.home-advices-slider').length) {
+            sly.reload();
+        }
     });
 
     //------------------------------------------------------------------------//
@@ -237,6 +241,47 @@ $(document).ready(function(){
         var thisParent = $(this).parents('.services-package');
         thisParent.find('.services-package-options').toggleClass('open');
     });
+
+    //------------------------------------------------------------------------//
+
+    //centerModal
+    function centerModal() {
+        var modalName = $('.modal-center');
+        var windowWidth = $(window).width();
+        var windowHeight = $(window).height();
+        modalName.each(function() {
+            var modalOuterWidth = $(this).outerWidth();
+            var modalOuterHeight = $(this).outerHeight();
+            $(this).css({
+                margin: 0
+            });
+            if (windowHeight > modalOuterHeight) {
+                $(this).css({
+                    top: (windowHeight - modalOuterHeight) /2
+                });
+            } else {
+               $(this).css({
+                    top: 0
+                });
+            }
+            if (windowWidth > modalOuterWidth) {
+                $(this).css({
+                    left: (windowWidth - modalOuterWidth) /2
+                });
+            } else {
+               $(this).css({
+                    left: 0
+                });
+            }
+        });
+    }
+    $('[data-toggle="modal"]').on('click', function() {
+        centerModal();
+    });
+    $(window).resize(function(){
+        centerModal();
+    });
+    centerModal();
 
     //------------------------------------------------------------------------//
 

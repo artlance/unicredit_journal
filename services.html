@@ -483,7 +483,7 @@
                     <div class="row">
                         <div class="col-23">
                             <div class="services-packages-compare animationFadeInUp delay03">
-                                <a href="#" class="services-packages-compare-link">
+                                <a href="#compare" data-toggle="modal" class="services-packages-compare-link">
                                     <span class="services-packages-compare-ico">
                                         <span class="svg">
                                             <svg width="29" height="18" viewBox="0 0 29 18" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M20 0a9 9 0 1 1 0 18 9 9 0 0 1 0-18z" fill="#DADADA"/><path d="M9 3a6 6 0 1 1 0 12A6 6 0 0 1 9 3zm0-3a9 9 0 1 0 0 18A9 9 0 0 0 9 0z" fill="#24ada2" class="svg-fill" fill-rule="nonzero"/></g></svg>
@@ -786,7 +786,7 @@
                                             <a href="#" class="button button-bordered"><span class="button-arrow-left">Предыдущий шаг</span></a>
                                         </div>
                                         <div class="services-order-step-2-send">
-                                            <a href="#" class="button"><span class="button-arrow">Отправить заявку</span></a>
+                                            <a href="#success" data-toggle="modal" class="button"><span class="button-arrow">Отправить заявку</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -889,6 +889,108 @@
         </footer>
     </div>
     <!-- /.main -->
+    <div class="modal modal-full modal-compare modal-center" id="compare" tabindex="-1" role="dialog">
+        <a href="#" class="close" data-dismiss="modal" aria-hidden="true" title="Закрыть"><span class="close-icon"></span></a>
+        <div class="modal-title">Сравнение пакетов финансовых услуг</div>
+        <div class="modal-table-overflow">
+            <table class="compare-table">
+                <thead>
+                    <tr>
+                        <th>Услуги</th>
+                        <th>
+                            <div class="compare-icon"><img src="upload/icon-package1.svg" alt=""></div>
+                            <div class="compare-icon-title">Комфорт</div>
+                        </th>
+                        <th>
+                            <div class="compare-icon"><img src="upload/icon-package2.svg" alt=""></div>
+                            <div class="compare-icon-title">Бизнес</div>
+                        </th>
+                        <th>
+                            <div class="compare-icon"><img src="upload/icon-package3.svg" alt=""></div>
+                            <div class="compare-icon-title">Розничный</div>
+                        </th>
+                        <th>
+                            <div class="compare-icon"><img src="upload/icon-package3.svg" alt=""></div>
+                            <div class="compare-icon-title">Максимум</div>
+                        </th>
+                        <th>
+                            <div class="compare-icon"><img src="upload/icon-package2.svg" alt=""></div>
+                            <div class="compare-icon-title">Безграничный</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Персональный менеджер в&nbsp;Банке</td>
+                        <td><span class="compare-status"><img src="upload/yes.svg" alt=""></span></td>
+                        <td><span class="compare-status"><img src="upload/yes.svg" alt=""></span></td>
+                        <td><span class="compare-status"><img src="upload/yes.svg" alt=""></span></td>
+                        <td><span class="compare-status"><img src="upload/yes.svg" alt=""></span></td>
+                        <td><span class="compare-status"><img src="upload/yes.svg" alt=""></span></td>
+                    </tr>
+                    <tr>
+                        <td>Привилегированное банковское обслуживание</td>
+                        <td><span class="compare-status"><img src="upload/no.svg" alt=""></span></td>
+                        <td><span class="compare-status"><img src="upload/no.svg" alt=""></span></td>
+                        <td><span class="compare-status"><img src="upload/no.svg" alt=""></span></td>
+                        <td><span class="compare-status"><img src="upload/no.svg" alt=""></span></td>
+                        <td><span class="compare-status"><img src="upload/yes.svg" alt=""></span></td>
+                    </tr>
+                    <tr>
+                        <td>Открытие и&nbsp;ведение расчетного счета в&nbsp;рублях</td>
+                        <td><span class="compare-status"><img src="upload/no.svg" alt=""></span></td>
+                        <td><span class="compare-status"><img src="upload/no.svg" alt=""></span></td>
+                        <td><span class="compare-status"><img src="upload/no.svg" alt=""></span></td>
+                        <td><span class="compare-status"><img src="upload/no.svg" alt=""></span></td>
+                        <td><span class="compare-status"><img src="upload/no.svg" alt=""></span></td>
+                    </tr>
+                    <tr>
+                        <td>Открытие и&nbsp;ведение до&nbsp;двух расчетных счетов в&nbsp;иностранной валюте</td>
+                        <td><span class="compare-status"><img src="upload/no.svg" alt=""></span></td>
+                        <td><span class="compare-status"><img src="upload/yes.svg" alt=""></span></td>
+                        <td><span class="compare-status"><img src="upload/yes.svg" alt=""></span></td>
+                        <td><span class="compare-status"><img src="upload/yes.svg" alt=""></span></td>
+                        <td><span class="compare-status"><img src="upload/yes.svg" alt=""></span></td>
+                    </tr>
+                    <tr>
+                        <td>Привилегированное банковское обслуживание</td>
+                        <td><span class="compare-status"><img src="upload/no.svg" alt=""></span></td>
+                        <td><span class="compare-status"><img src="upload/no.svg" alt=""></span></td>
+                        <td><span class="compare-status"><img src="upload/no.svg" alt=""></span></td>
+                        <td><span class="compare-status"><img src="upload/no.svg" alt=""></span></td>
+                        <td><span class="compare-status"><img src="upload/yes.svg" alt=""></span></td>
+                    </tr>
+                    <tr>
+                        <td>Открытие и&nbsp;ведение расчетного счета в&nbsp;рублях</td>
+                        <td><span class="compare-status"><img src="upload/yes.svg" alt=""></span></td>
+                        <td><span class="compare-status"><img src="upload/yes.svg" alt=""></span></td>
+                        <td><span class="compare-status"><img src="upload/yes.svg" alt=""></span></td>
+                        <td><span class="compare-status"><img src="upload/yes.svg" alt=""></span></td>
+                        <td><span class="compare-status"><img src="upload/yes.svg" alt=""></span></td>
+                    </tr>
+                    <tr>
+                        <td>Открытие и&nbsp;ведение до&nbsp;двух расчетных счетов в&nbsp;иностранной валюте</td>
+                        <td><span class="compare-status"><img src="upload/yes.svg" alt=""></span></td>
+                        <td><span class="compare-status"><img src="upload/yes.svg" alt=""></span></td>
+                        <td><span class="compare-status"><img src="upload/yes.svg" alt=""></span></td>
+                        <td><span class="compare-status"><img src="upload/yes.svg" alt=""></span></td>
+                        <td><span class="compare-status"><img src="upload/yes.svg" alt=""></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- /.modal-table-overflow -->
+    </div>
+    <!-- /.modal -->
+    <div class="modal modal-success modal-center" id="success" tabindex="-1" role="dialog">
+        <a href="#" class="close" data-dismiss="modal" aria-hidden="true" title="Закрыть"><span class="close-icon"></span></a>
+        <div class="modal-success-content">
+            <div class="modal-success-title">Спасибо!</div>
+            <p>Ваша заявка увпешно отправлена!</p>
+        </div>
+        <!-- /.modal-success-content -->
+    </div>
+    <!-- /.modal -->
     <script src="js/jquery.js"></script>
     <script src="js/migrate.js"></script>
     <script src="js/library.js"></script>

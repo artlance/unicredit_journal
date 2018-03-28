@@ -231,6 +231,14 @@ $(document).ready(function(){
 
     //------------------------------------------------------------------------//
 
+    $('.services-package-toggle').on('click', function(event) {
+        event.preventDefault();
+        $(this).toggleClass('active');
+        var thisParent = $(this).parents('.services-package');
+        thisParent.find('.services-package-options').toggleClass('open');
+    });
+
+    //------------------------------------------------------------------------//
 
 });//document ready
 

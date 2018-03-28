@@ -10,8 +10,6 @@
 }
 .services-hero-content {
     h5 {
-        // margin-bottom: 30px;
-        // font-size: 16px;
         margin-bottom: 40px;
         font-size: 20px;
         line-height: 1.2;
@@ -36,17 +34,12 @@
         font-size: 58px;
         line-height: 1.035;
         margin-bottom: 45px;
-        // font-size: 48px;
-        // line-height: 1.042;
-        // margin-bottom: 35px;
         font-weight: bold;
         letter-spacing: -0.5px;
     }
     p {
         font-size: 26px;
         line-height: 1.154;
-        // font-size: 22px;
-        // line-height: 1.182;
         font-weight: 300;
         color: #111111;
         letter-spacing: -0.2px;
@@ -267,8 +260,7 @@
         }
     }
 }
-.services-package-basic-title {
-}
+.services-package-basic-title {}
 .services-package-basic-title-link {
     display: flex;
     &:hover {
@@ -317,6 +309,7 @@
 .services-package-basic-more {}
 .services-package-basic-advantages {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 5px;
     li {
         flex: 0 0 50%;
@@ -348,12 +341,15 @@
 }
 .services-package-caption {}
 .services-package-img {
-    display: flex;
-    align-items: center;
-    width: 97px;
-    height: 97px;
-    margin: 0 auto 33px;
-    background: #c3d1f6;
+    margin-bottom: 33px;
+    span {
+        display: flex;
+        align-items: center;
+        width: 97px;
+        height: 97px;
+        margin: 0 auto;
+        background: #c3d1f6;
+    }
     img {
         display: block;
         margin: 0 auto;
@@ -422,7 +418,9 @@
     font-weight: bold;
     color: #111111;
 }
-.services-package-options {}
+.services-package-options {
+    display: block !important;
+}
 .services-package-options-list {
     display: block;
     padding: 4px 0 21px;
@@ -563,13 +561,15 @@
 }
 .services-account-steps {
     display: flex;
+    flex-wrap: wrap;
     margin-right: -4.34783%;
-    margin-bottom: 67px;
+    margin-bottom: 27px;
 }
 .services-account-step {
     flex: 0 0 33.3333%;
     max-width: 33.3333%;
     padding-right: 4.34783%;
+    padding-bottom: 40px;
 }
 .services-account-step-content {
     display: flex;
@@ -735,12 +735,59 @@
 .services-order-step-2 {
     display: none;
 }
+.services-order-step-error {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #fe9e9e;
+    letter-spacing: -0.3px;
+    padding-top: 19px;
+    margin-bottom: 7px;
+}
 .services-order-step-input {
     margin-bottom: 25px;
+    position: relative;
+    &:before {
+        opacity: 0;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -31px;
+        width: 19px;
+        height: 19px;
+        background: url('../images/error.svg') 0 0 no-repeat;
+        background-size: 19px 19px;
+        transform: translate3d(0, -50%, 0);
+        transition: opacity $d $f;
+    }
+    &.error {
+        &:before {
+            opacity: 1;
+        }
+    }
 }
 .services-order-step-city {
     position: relative;
     letter-spacing: -0.3px;
+    margin-bottom: 25px;
+    &:before {
+        opacity: 0;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -31px;
+        width: 19px;
+        height: 19px;
+        background: url('../images/error.svg') 0 0 no-repeat;
+        background-size: 19px 19px;
+        transform: translate3d(0, -50%, 0);
+        transition: opacity $d $f;
+    }
+    &.error {
+        &:before {
+            opacity: 1;
+        }
+    }
     &.active {
         .services-order-step-city-toggle-arrow {
             .svg {
@@ -837,9 +884,11 @@
     padding: 33px 0 10px;
 }
 .services-order-step-confirm {
-    padding: 26px 0 49px;
+    padding: 26px 0 16px;
 }
-.services-order-step-buttons {}
+.services-order-step-buttons {
+    padding-top: 33px;
+}
 .services-order-step-2-back {
     float: left;
     margin: 0 30px 20px 0;

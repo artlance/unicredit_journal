@@ -518,3 +518,30 @@
         }
     }
 }
+.home-advice-number {
+    display: block;
+    padding-top: 14px;
+    a {
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        padding-left: 29px;
+        font-size: 20px;
+        line-height: 1.2;
+        font-weight: 300;
+        color: $w;
+        &:hover {
+            .svg-stroke {
+                stroke: $lh;
+            }
+        }
+        .svg {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 19px;
+            margin-top: 4px;
+            transform: translate3d(0, -50%, 0);
+        }
+    }
+}

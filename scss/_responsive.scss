@@ -494,6 +494,22 @@
         padding-left: 33px;
         padding-right: 33px;
     }
+    .article-hero-category {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .article-hero-title {
+        h1 {
+            font-size: 42px;
+            line-height: 48px;
+        }
+    }
+    .article-hero-date {
+        font-size: 20px;
+    }
+    .article-popular-item-title {
+        padding-right: 29px;
+    }
 }
 @media (max-width: 1424px) {
     .home-slide-category {
@@ -531,6 +547,19 @@
             margin-bottom: 30px;
             font-size: 16px;
         }
+    }
+    .article-hero-category {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .article-hero-title {
+        h1 {
+            font-size: 40px;
+            line-height: 46px;
+        }
+    }
+    .article-hero-date {
+        font-size: 18px;
     }
 }
 @include media-breakpoint-down(md) {    //max-width: 1249px
@@ -1690,6 +1719,162 @@
         font-size: 16px;
         line-height: 20px;
     }
+    .article-hero {
+        margin-bottom: 32px;
+    }
+    .article-hero-content {
+        left: 45px;
+        right: 45px;
+        bottom: 52px;
+    }
+    .article-hero-category {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 22px;
+        letter-spacing: 0.4px;
+    }
+    .article-hero-title {
+        h1 {
+            font-size: 36px;
+            line-height: 42px;
+            margin-bottom: 28px;
+        }
+    }
+    .article-hero-date {
+        font-size: 16px;
+        padding-left: 27px;
+        &:before {
+            margin-top: 1px;
+            width: 18px;
+            height: 18px;
+            background-size: 18px 18px;
+        }
+    }
+    .article-hero-info {
+        padding-bottom: 10px;
+        border-bottom-width: 7px;
+        p {
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            margin-bottom: 24px;
+        }
+    }
+    .article {
+        padding: 9px 0 40px;
+    }
+    .article-popular {
+        h4 {
+            margin-top: 24px;
+            margin-bottom: 18px;
+            padding-bottom: 22px;
+            border-bottom-width: 1px;
+        }
+    }
+    .article-popular-item {
+        padding-bottom: 21px;
+        border-bottom-width: 1px;
+    }
+    .article-popular-item-category {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+    .article-popular-item-title {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .article-product-block {
+        .home-article {
+            margin-bottom: 15px;
+        }
+    }
+    .article-expert {
+        padding-right: 109px;
+    }
+    .article-social {
+        padding-top: 1px;
+        h4 {
+            margin-top: 15px;
+        }
+    }
+    .article-social-list {
+        a {
+            margin-right: 23px;
+        }
+        span {
+            width: 39px;
+            height: 39px;
+        }
+        img {
+            margin-top: 0;
+        }
+    }
+    .article-social-ico1 {
+        img {
+            width: 20px;
+        }
+    }
+    .article-social-ico2 {
+        img {
+            width: 24px;
+        }
+    }
+    .article-social-ico3 {
+        img {
+            width: 22px;
+        }
+    }
+    .article-social-ico4 {
+        img {
+            width: 23px;
+        }
+    }
+    .wysiwyg {
+        font-size: 16px;
+        line-height: 22px;
+        h2 {
+            font-size: 28px;
+            line-height: 32px;
+        }
+        h4 {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        figure {
+            padding-top: 18px;
+            img {
+                margin-bottom: 15px;
+            }
+        }
+        figcaption {
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0;
+        }
+        blockquote {
+            border-top-width: 7px;
+            border-bottom-width: 7px;
+            padding: 39px 45px 46px 90px;
+            margin-bottom: 37px;
+            &:before {
+                top: 21px;
+                font-size: 99px;
+            }
+            p {
+                font-size: 20px;
+                line-height: 25px;
+            }
+            span {
+                padding-top: 26px;
+                font-size: 14px;
+                line-height: 18px;
+            }
+            img {
+                top: 39px;
+                width: 104px;
+            }
+        }
+    }
 }
 @include media-breakpoint-down(sm) {    //max-width: 767px
     .container {
@@ -2367,11 +2552,99 @@
     .package-include-show {
         padding-top: 16px;
     }
+    .article-hero {
+        margin-bottom: 16px;
+    }
+    .article-hero-img {
+        padding-top: 48%;
+    }
+    .article-hero-content {
+        position: relative;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        color: $text;
+        padding: 27px 0 10px;
+    }
+    .article-hero-category {
+        margin-bottom: 13px;
+    }
+    .article-hero-title {
+        h1 {
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 18px;
+            letter-spacing: -0.2px;
+        }
+    }
+    .article-hero-info {
+        padding-bottom: 6px;
+        p {
+            font-size: 18px;
+        }
+    }
+    .article {
+        padding-top: 2px;
+    }
+    .article-popular {
+        h4 {
+            margin-top: 6px;
+            padding-bottom: 14px;
+            margin-bottom: 14px;
+        }
+    }
+    .article-popular-item {
+        padding-bottom: 17px;
+        margin-bottom: 14px;
+    }
+    .article-expert {
+        padding-right: 0;
+        margin-bottom: 4px;
+    }
+    .wysiwyg {
+        line-height: 20px;
+        h2 {
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+        }
+        figcaption {
+            font-size: 13px;
+            line-height: 15px;
+            padding-top: 5px;
+        }
+        blockquote {
+            padding: 28px 0 31px 45px;
+            margin-bottom: 31px;
+            &:before {
+                font-size: 78px;
+                left: -4px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 22px;
+            }
+            span {
+                padding-right: 70px;
+            }
+            img {
+                width: 37px;
+                top: auto;
+                bottom: 30px;
+            }
+        }
+    }
 }
 @include media-breakpoint-down(xs) {    //max-width: 575px
     .home-article-x2 {
         .home-article-product-img {
             padding-top: 100%;
         }
+        .home-article-product-title {
+            max-height: 88px;
+        }
+    }
+    .home-article-product-title {
+        max-height: 88px;
     }
 }

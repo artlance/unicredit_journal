@@ -125,12 +125,12 @@ $(document).ready(function(){
 
     //------------------------------------------------------------------------//
 
-    $('a').hover(function() {
+    $(document).on('mouseenter', 'a', function(event) {
         var thisLink = $(this);
         setTimeout(function(){
             thisLink.addClass('link-hovered');
         }, 150);
-    }, function() {
+    }).on('mouseleave', 'a', function(event) {
         var thisLink = $(this);
         setTimeout(function(){
             thisLink.removeClass('link-hovered');
@@ -294,6 +294,32 @@ $(document).ready(function(){
         $('.package-include-list-wrapper').find('.extra-hidden').toggleClass('hidden');
         $('.package-include-list-js').toggleClass('package-include-list-second');
     });
+
+    //------------------------------------------------------------------------//
+
+    $('.article-popular-clone').html($('.article-popular').clone());
+
+    function articleSidebar() {
+
+        var sidebarArticle = $('.article-sidebar .article-popular');
+        var contentOffset = $('.article-content').offset().top;
+
+        var contentOffsetImg;
+        var contentImg = $('.article-content .first');
+        if ( contentImg.length ) {
+            contentOffsetImg = contentImg.offset().top;
+        } else {
+            contentOffsetImg = contentOffset;
+        }
+        sidebarArticle.css({'padding-top': contentOffsetImg - contentOffset});
+    };
+    articleSidebar();
+
+    $(window).resize(function() {
+        articleSidebar();
+    });
+
+    //------------------------------------------------------------------------//
 
 });//document ready
 

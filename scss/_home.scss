@@ -466,7 +466,10 @@
     margin-bottom: 45px;
     height: 320px;
     overflow: hidden;
-    background: #4a505e;
+    background-color: #4a505e;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
 }
 .home-advice-ico1,

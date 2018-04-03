@@ -54,27 +54,49 @@ $(document).ready(function(){
     //------------------------------------------------------------------------//
 
     //home advices slider
-    var options = {
-        horizontal: true,
-        itemNav: 'basic',
-        dragSource: '.home-advices-slider',
-        scrollBar: '.scrollbar',
-        scrollBy: 1,
-        dragHandle: true,
-        dynamicHandle: true,
-        releaseSwing: true,
-        startAt: 0,
-        speed: 500,
-        mouseDragging: true,
-        touchDragging: true,
-        elasticBounds: true
-    };
-    if ($('.home-advices-slider').length) {
-        var sly = new Sly($('.home-advices-slider'), options).init();
+
+    var frame = $('.home-advices-slider');
+
+    if (frame.length) {
+        frame.each(function(index, el) {
+            var _frame = $(this);
+            var frameWrap = _frame.parent();
+            _frame.sly({
+                horizontal: true,
+                itemNav: 'basic',
+                scrollBar: frameWrap.find('.scrollbar'),
+                scrollBy: 1,
+                dragHandle: true,
+                dynamicHandle: true,
+                releaseSwing: true,
+                startAt: 0,
+                speed: 500,
+                mouseDragging: true,
+                touchDragging: true,
+                elasticBounds: true
+            });
+        });
     }
+
+    function scrollbarHandle() {
+        $('.scrollbar').each(function(index, el) {
+            var _this = $(this);
+            var thisWidth = _this.innerWidth();
+            var thisHandleWidth = _this.find('.handle').innerWidth();
+            if ( thisWidth == thisHandleWidth || thisHandleWidth == 0 ) {
+                _this.hide();
+            } else {
+                _this.show();
+            }
+        });
+    }
+
+    scrollbarHandle();
+
     $(window).resize(function() {
-        if ($('.home-advices-slider').length) {
-            sly.reload();
+        if (frame.length) {
+            frame.sly('reload');
+            scrollbarHandle();
         }
     });
 
@@ -328,6 +350,9 @@ $(document).ready(function(){
 $(window).load(function() {
 
     //load
+
+    //article
+    $('.article-content > *').addClass('animationFadeIn');
 
     //animation
     $('.animationFadeInUp').waypoint(function(direction) {

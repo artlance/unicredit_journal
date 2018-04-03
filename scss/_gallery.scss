@@ -8,6 +8,14 @@
     height: 371px;
     margin-bottom: 46px;
 }
+.articles-category-slider {
+    height: 500px;
+    .slidee {
+        li {
+            width: 448px;
+        }
+    }
+}
 .slidee {
     display: block;
     height: 100%;
@@ -23,6 +31,7 @@
     width: 100%;
     height: 10px;
     background: #535967;
+    margin-bottom: 30px;
 }
 .scrollbar .handle {
     height: 100%;

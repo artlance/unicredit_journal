@@ -488,7 +488,7 @@
 }
 .services-partners {
     margin-bottom: 59px;
-    padding: 49px 0 62px;
+    padding: 49px 0 32px;
     background: $s;
     color: $w;
 }
@@ -1409,5 +1409,110 @@
 .article-social-ico4 {
     img {
         width: 25px;
+    }
+}
+.articles {}
+.articles-item {
+    overflow: hidden;
+    margin-bottom: 60px;
+    position: relative;
+}
+.articles-item-img {
+    height: 0;
+    padding-top: 57.714%;
+    background-color: $lgr;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.articles-item-main {
+    position: absolute;
+    left: 9.091%;
+    right: 9.091%;
+    top: 33px;
+    font-size: 22px;
+    line-height: 28px;
+    color: $w;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+.articles-item-content {
+    position: absolute;
+    left: 9.091%;
+    right: 9.091%;
+    bottom: 37px;
+}
+.articles-item-category {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+    a {
+        color: #4fb4ac;
+        &:hover {
+            color: $lh;
+        }
+    }
+}
+.articles-item-title {
+    padding-right: 40px;
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: bold;
+    max-height: 176px;
+    overflow: hidden;
+    a {
+        display: block;
+        color: $w;
+    }
+}
+.articles-list {}
+.articles-category {
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: bold;
+    color: $w;
+    letter-spacing: -0.3px;
+    margin-bottom: 50px;
+}
+.articles-category-item {
+    display: block;
+}
+.articles-category-item-img {
+    display: block;
+    margin-bottom: 45px;
+    height: 0;
+    padding-top: 56.98%;
+    background-color: #4a505e;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.load-button-wrapper {
+    text-align: center;
+    padding: 20px 0 25px;
+}
+.load-button {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding: 11px 0 13px 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #24ada2;
+    letter-spacing: 0.5px;
+    .svg {
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 21px;
+    }
+    &:hover {
+        color: $lh;
+        .svg-stroke {
+            stroke: $lh;
+        }
     }
 }

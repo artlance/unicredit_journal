@@ -4454,6 +4454,14 @@ body.modal-open {
   margin-bottom: 46px;
 }
 
+.articles-category-slider {
+  height: 500px;
+}
+
+.articles-category-slider .slidee li {
+  width: 448px;
+}
+
 .slidee {
   display: block;
   height: 100%;
@@ -4471,6 +4479,7 @@ body.modal-open {
   width: 100%;
   height: 10px;
   background: #535967;
+  margin-bottom: 30px;
 }
 
 .scrollbar .handle {
@@ -5861,7 +5870,7 @@ a.submenu-business:before {
 
 .services-partners {
   margin-bottom: 59px;
-  padding: 49px 0 62px;
+  padding: 49px 0 32px;
   background: #434957;
   color: #ffffff;
 }
@@ -7006,6 +7015,126 @@ a.submenu-business:before {
   width: 25px;
 }
 
+.articles-item {
+  overflow: hidden;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.articles-item-img {
+  height: 0;
+  padding-top: 57.714%;
+  background-color: #e9e9e9;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.articles-item-main {
+  position: absolute;
+  left: 9.091%;
+  right: 9.091%;
+  top: 33px;
+  font-size: 22px;
+  line-height: 28px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.articles-item-content {
+  position: absolute;
+  left: 9.091%;
+  right: 9.091%;
+  bottom: 37px;
+}
+
+.articles-item-category {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+
+.articles-item-category a {
+  color: #4fb4ac;
+}
+
+.articles-item-category a:hover {
+  color: #66d6cd;
+}
+
+.articles-item-title {
+  padding-right: 40px;
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: bold;
+  max-height: 176px;
+  overflow: hidden;
+}
+
+.articles-item-title a {
+  display: block;
+  color: #ffffff;
+}
+
+.articles-category {
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: -0.3px;
+  margin-bottom: 50px;
+}
+
+.articles-category-item {
+  display: block;
+}
+
+.articles-category-item-img {
+  display: block;
+  margin-bottom: 45px;
+  height: 0;
+  padding-top: 56.98%;
+  background-color: #4a505e;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.load-button-wrapper {
+  text-align: center;
+  padding: 20px 0 25px;
+}
+
+.load-button {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  padding: 11px 0 13px 42px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #24ada2;
+  letter-spacing: 0.5px;
+}
+
+.load-button .svg {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 21px;
+}
+
+.load-button:hover {
+  color: #66d6cd;
+}
+
+.load-button:hover .svg-stroke {
+  stroke: #66d6cd;
+}
+
 .arrow {
   display: inline-block;
   vertical-align: middle;
@@ -7685,7 +7814,7 @@ a.link-hovered .arrow-bottom:after {
 }
 
 .home-advices {
-  padding: 51px 0 63px;
+  padding: 51px 0 33px;
   background: #434957;
 }
 
@@ -8110,7 +8239,7 @@ a.link-hovered .arrow-bottom:after {
     line-height: 1.2;
   }
   .home-advices {
-    padding: 40px 0 50px;
+    padding: 40px 0 20px;
   }
   .home-advices-category h3 {
     margin-bottom: 30px;
@@ -8130,6 +8259,12 @@ a.link-hovered .arrow-bottom:after {
   .slidee li {
     margin-right: 50px;
     width: 250px;
+  }
+  .articles-category-slider {
+    height: 390px;
+  }
+  .articles-category-slider .slidee li {
+    width: 350px;
   }
   .scrollbar {
     height: 8px;
@@ -8286,6 +8421,31 @@ a.link-hovered .arrow-bottom:after {
   .article-popular-item-title {
     padding-right: 29px;
   }
+  .articles-item {
+    margin-bottom: 50px;
+  }
+  .articles-item-title {
+    padding-right: 33px;
+    font-size: 38px;
+    line-height: 42px;
+    max-height: 168px;
+  }
+  .articles-item-main {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .articles-item-category {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .articles-category {
+    font-size: 38px;
+    line-height: 42px;
+    margin-bottom: 42px;
+  }
+  .articles-category-item-img {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 1424px) {
@@ -8331,6 +8491,19 @@ a.link-hovered .arrow-bottom:after {
   }
   .article-hero-date {
     font-size: 18px;
+  }
+  .articles-item-main {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .articles-item-category {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .articles-item-title {
+    font-size: 36px;
+    line-height: 40px;
+    max-height: 160px;
   }
 }
 
@@ -8602,7 +8775,7 @@ a.link-hovered .arrow-bottom:after {
     line-height: 1.2223;
   }
   .home-advices {
-    padding: 37px 0 45px;
+    padding: 37px 0 15px;
   }
   .home-advices-category h3 {
     margin-bottom: 27px;
@@ -8617,6 +8790,12 @@ a.link-hovered .arrow-bottom:after {
   }
   .slidee li {
     margin-right: 45px;
+    width: 225px;
+  }
+  .articles-category-slider {
+    height: 300px;
+  }
+  .articles-category-slider .slidee li {
     width: 225px;
   }
   .scrollbar {
@@ -9063,7 +9242,7 @@ a.link-hovered .arrow-bottom:after {
     width: 27px;
   }
   .services-partners {
-    padding-bottom: 52px;
+    padding-bottom: 22px;
     margin-bottom: 50px;
   }
   .services-partners-title h4 {
@@ -9663,6 +9842,29 @@ a.link-hovered .arrow-bottom:after {
   .wysiwyg blockquote img {
     top: 39px;
     width: 104px;
+  }
+  .articles-item {
+    margin-bottom: 45px;
+  }
+  .articles-item-img {
+    padding-top: 47.1112%;
+  }
+  .articles-item-main,
+  .articles-item-content {
+    left: 45px;
+    right: 45px;
+  }
+  .articles-list .home-articles-latest {
+    padding-left: 0;
+    padding-right: 45px;
+  }
+  .articles-category-item-img {
+    margin-bottom: 20px;
+  }
+  .articles-category {
+    font-size: 27px;
+    line-height: 31px;
+    margin-bottom: 29px;
   }
 }
 
@@ -10448,6 +10650,46 @@ a.link-hovered .arrow-bottom:after {
     width: 37px;
     top: auto;
     bottom: 30px;
+  }
+  .articles-item {
+    margin-bottom: 25px;
+  }
+  .articles-item-img {
+    padding-top: 57.714%;
+  }
+  .articles-item-main {
+    font-size: 13px;
+    line-height: 19px;
+    left: 20px;
+    right: 20px;
+    top: 22px;
+  }
+  .articles-item-content {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    padding-left: 20px;
+    background: #242933;
+    min-height: 135px;
+    padding-top: 18px;
+  }
+  .articles-item-category {
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: bold;
+    padding-right: 20px;
+    margin-bottom: 9px;
+  }
+  .articles-item-title {
+    padding-right: 43px;
+    font-size: 18px;
+    line-height: 1.2223;
+    max-height: none;
+    padding-bottom: 18px;
+  }
+  .articles-list .home-articles-latest {
+    padding-right: 0;
   }
 }
 

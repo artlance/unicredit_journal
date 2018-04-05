@@ -139,6 +139,23 @@ input.header-search-text {
         font-size: 24px;
         line-height: 1.2;
         font-weight: bold;
+        position: relative;
+        &:before {
+            opacity: 0;
+            content: "";
+            position: absolute;
+            top: -54px;
+            left: -1px;
+            right: -1px;
+            height: 8px;
+            background: #3bd3c7;
+            transition: opacity $d $f;
+        }
+        &.active {
+            &:before {
+                opacity: 1;
+            }
+        }
         a {
             display: inline-block;
             vertical-align: top;

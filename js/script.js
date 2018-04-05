@@ -196,7 +196,6 @@ $(document).ready(function(){
     var scrollPaneResize = function() {
         if ($('.scroll-pane').length) {
             $('.scroll-pane').each(function(index, el) {
-                console.log('RESIZE');
                 $(this).jScrollPane({showArrows: false, autoReinitialise: true}).data('jsp').destroy();
                 $('.scroll-pane').jScrollPane({showArrows: false, autoReinitialise: true}).data('jsp').reinitialise();
             });

@@ -1896,3 +1896,117 @@ input.search-form-text {
         }
     }
 }
+.advice-hero {
+    padding: 86px 0;
+    color: $w;
+    background: $s;
+    margin-bottom: 20px;
+}
+.advice-hero-img {
+    max-width: 190px;
+    margin: 0 auto;
+}
+.advice-hero-content {
+    padding-right: 45px;
+}
+.advice-hero-info {
+    padding-top: 13px;
+    .home-advice-number {
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 0;
+        margin-right: 48px;
+        a {
+            font-size: 22px;
+            line-height: 1.3334;
+            padding-left: 32px;
+            .svg {
+                width: 22px;
+                margin-top: 4px;
+            }
+        }
+    }
+    .article-hero-date {
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+.advice-list {
+    margin-bottom: 50px;
+    padding: 44px 30px 21px 60px;
+    background: $blue;
+    position: relative;
+    overflow: hidden;
+}
+.advice-list-content {
+    position: relative;
+    z-index: 2;
+    ol {
+        margin-top: 0;
+        margin-bottom: 0;
+        li {
+            padding-left: 0;
+            margin-bottom: 37px;
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 900;
+            color: #59ccc3;
+            a {
+                display: block;
+                padding-left: 10px;
+                padding-right: 35px;
+                font-weight: bold;
+                color: $w;
+                letter-spacing: -0.2px;
+            }
+        }
+    }
+}
+.advice-list-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    backface-visibility: hidden;
+    .svg {
+        position: relative;
+        right: -30%;
+        margin-bottom: -30%;
+    }
+}
+.advice-item {
+    padding-left: 6.6667%;
+    position: relative;
+    padding-bottom: 10px;
+}
+.advice-item-number {
+    position: absolute;
+    left: -15px;
+    top: 0;
+    width: 45px;
+    height: 45px;
+    background: #e7e7e7;
+    border-radius: 50%;
+    span {
+        position: absolute;
+        left: 9px;
+        right: 9px;
+        bottom: -5px;
+    }
+    img {
+        display: block;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+.advice-item-title {
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: bold;
+    letter-spacing: -0.3px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.advice-social {
+    padding-left: 6.6667%;
+}

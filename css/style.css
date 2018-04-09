@@ -3596,16 +3596,6 @@ a.underline {
   margin-bottom: 24px;
 }
 
-.wysiwyg a {
-  -ms-word-break: break-all;
-  word-break: break-all;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
-}
-
 .wysiwyg img {
   display: block;
   margin-top: 24px;
@@ -3711,10 +3701,10 @@ a.underline {
 }
 
 .wysiwyg ol {
-  overflow: hidden;
+  display: block;
   margin-top: 24px;
   margin-bottom: 24px;
-  list-style: inside decimal;
+  list-style: outside decimal;
 }
 
 .wysiwyg ol li {
@@ -7627,6 +7617,142 @@ input.search-form-text::placeholder {
   color: #525252;
 }
 
+.advice-hero {
+  padding: 86px 0;
+  color: #ffffff;
+  background: #434957;
+  margin-bottom: 20px;
+}
+
+.advice-hero-img {
+  max-width: 190px;
+  margin: 0 auto;
+}
+
+.advice-hero-content {
+  padding-right: 45px;
+}
+
+.advice-hero-info {
+  padding-top: 13px;
+}
+
+.advice-hero-info .home-advice-number {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 0;
+  margin-right: 48px;
+}
+
+.advice-hero-info .home-advice-number a {
+  font-size: 22px;
+  line-height: 1.3334;
+  padding-left: 32px;
+}
+
+.advice-hero-info .home-advice-number a .svg {
+  width: 22px;
+  margin-top: 4px;
+}
+
+.advice-hero-info .article-hero-date {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.advice-list {
+  margin-bottom: 50px;
+  padding: 44px 30px 21px 60px;
+  background: #4e72cd;
+  position: relative;
+  overflow: hidden;
+}
+
+.advice-list-content {
+  position: relative;
+  z-index: 2;
+}
+
+.advice-list-content ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.advice-list-content ol li {
+  padding-left: 0;
+  margin-bottom: 37px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 900;
+  color: #59ccc3;
+}
+
+.advice-list-content ol li a {
+  display: block;
+  padding-left: 10px;
+  padding-right: 35px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: -0.2px;
+}
+
+.advice-list-bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.advice-list-bg .svg {
+  position: relative;
+  right: -30%;
+  margin-bottom: -30%;
+}
+
+.advice-item {
+  padding-left: 6.6667%;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.advice-item-number {
+  position: absolute;
+  left: -15px;
+  top: 0;
+  width: 45px;
+  height: 45px;
+  background: #e7e7e7;
+  border-radius: 50%;
+}
+
+.advice-item-number span {
+  position: absolute;
+  left: 9px;
+  right: 9px;
+  bottom: -5px;
+}
+
+.advice-item-number img {
+  display: block;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.advice-item-title {
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.advice-social {
+  padding-left: 6.6667%;
+}
+
 .arrow {
   display: inline-block;
   vertical-align: middle;
@@ -8796,6 +8922,12 @@ a.link-hovered .arrow-bottom:after {
     width: 15px;
     margin-top: 3px;
   }
+  .advice-hero-img {
+    max-width: 168px;
+  }
+  .advice-hero-info .home-advice-number a {
+    font-size: 20px;
+  }
   .footer-global {
     padding-top: 55px;
   }
@@ -8997,6 +9129,9 @@ a.link-hovered .arrow-bottom:after {
   .advices-expert-title {
     margin-bottom: 39px;
   }
+  .advice-list-content ol li a {
+    padding-right: 29px;
+  }
 }
 
 @media (max-width: 1424px) {
@@ -9041,6 +9176,12 @@ a.link-hovered .arrow-bottom:after {
     line-height: 46px;
   }
   .article-hero-date {
+    font-size: 18px;
+  }
+  .advice-hero-img {
+    max-width: 148px;
+  }
+  .advice-hero-info .home-advice-number a {
     font-size: 18px;
   }
   .articles-item-main,
@@ -9414,6 +9555,20 @@ a.link-hovered .arrow-bottom:after {
   }
   .home-advice-number a {
     font-size: 15px;
+  }
+  .advice-hero-img {
+    max-width: 134px;
+  }
+  .advice-hero-info .home-advice-number {
+    margin-right: 28px;
+  }
+  .advice-hero-info .home-advice-number a {
+    font-size: 16px;
+    padding-left: 28px;
+  }
+  .advice-hero-info .home-advice-number a .svg {
+    width: 18px;
+    margin-top: 3px;
   }
   .footer-global {
     padding-top: 50px;
@@ -10582,6 +10737,24 @@ a.link-hovered .arrow-bottom:after {
     left: auto;
     right: 0;
   }
+  .advice-hero {
+    padding: 45px 0 37px;
+  }
+  .advice-hero-content {
+    padding-left: 45px;
+    padding-right: 20px;
+  }
+  .advice-item-title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .advice-item,
+  .advice-social {
+    padding-left: 65px;
+  }
+  .advice-item-number {
+    left: 0;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -11574,6 +11747,46 @@ a.link-hovered .arrow-bottom:after {
   .advices-expert-bg .svg {
     position: relative;
     left: -20%;
+  }
+  .advice-hero-img {
+    max-width: 112px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 33px;
+  }
+  .advice-hero {
+    margin-left: -25px;
+    margin-right: -25px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .advice-hero-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .advice-hero-info {
+    padding-top: 0;
+    padding-bottom: 8px;
+  }
+  .advice-item-title {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+  }
+  .advice-item {
+    padding-left: 45px;
+    padding-bottom: 1px;
+  }
+  .advice-social {
+    padding-left: 0;
+  }
+  .advice-item-number {
+    width: 35px;
+    height: 35px;
+  }
+  .advice-item-number span {
+    left: 7px;
+    right: 7px;
   }
 }
 

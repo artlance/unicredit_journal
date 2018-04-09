@@ -86,12 +86,12 @@ a {
         margin-bottom: $spacer;
     }
     a {
-        -ms-word-break: break-all;
-        word-break: break-all;
-        word-break: break-word;
-        -webkit-hyphens: auto;
-        -moz-hyphens: auto;
-        hyphens: auto;
+        // -ms-word-break: break-all;
+        // word-break: break-all;
+        // word-break: break-word;
+        // -webkit-hyphens: auto;
+        // -moz-hyphens: auto;
+        // hyphens: auto;
     }
     img {
         display: block;
@@ -185,10 +185,10 @@ a {
         }
     }
     ol {
-        overflow: hidden;
+        display: block;
         margin-top: $spacer;
         margin-bottom: $spacer;
-        list-style: inside decimal;
+        list-style: outside decimal;
         li {
             padding-left: $spacer;
         }

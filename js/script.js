@@ -378,6 +378,9 @@ $(window).load(function() {
       offset: '80%'
     });
 
+    //matchHeight
+    $('.item-match-height').matchHeight();
+
 });//window load
 
 //*********************************************************************//

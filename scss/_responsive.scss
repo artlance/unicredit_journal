@@ -522,7 +522,9 @@
     .article-popular-item-title {
         padding-right: 29px;
     }
-    .articles-item {
+    .articles-item,
+    .advices-expert,
+    .advices-list .home-advice {
         margin-bottom: 50px;
     }
     .articles-item-title {
@@ -531,7 +533,8 @@
         line-height: 42px;
         max-height: 168px;
     }
-    .articles-item-main {
+    .articles-item-main,
+    .advices-expert-title {
         font-size: 20px;
         line-height: 26px;
     }
@@ -593,6 +596,22 @@
     .all-services-product-title {
         padding-right: 33px;
     }
+    .advices-expert-item {
+        margin-bottom: 32px;
+        blockquote {
+            p {
+                font-size: 20px;
+                line-height: 24px;
+            }
+            span {
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+    }
+    .advices-expert-title {
+        margin-bottom: 39px;
+    }
 }
 @media (max-width: 1424px) {
     .home-slide-category {
@@ -644,7 +663,8 @@
     .article-hero-date {
         font-size: 18px;
     }
-    .articles-item-main {
+    .articles-item-main,
+    .advices-expert-title {
         font-size: 18px;
         line-height: 24px;
     }
@@ -655,7 +675,7 @@
     .articles-item-title {
         font-size: 36px;
         line-height: 40px;
-        max-height: 160px;
+        max-height: 120px;
     }
     .all-services-hero-category {
         font-size: 16px;
@@ -675,6 +695,22 @@
                 top: 10px;
             }
         }
+    }
+    .advices-expert-item {
+        margin-bottom: 22px;
+        blockquote {
+            p {
+                font-size: 18px;
+                line-height: 22px;
+            }
+            span {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+    .advices-expert-title {
+        margin-bottom: 28px;
     }
 }
 @include media-breakpoint-down(md) {    //max-width: 1249px
@@ -978,6 +1014,15 @@
     .home-advice-ico3 {
         .svg {
             width: 75px;
+        }
+    }
+    .advices-list {
+        .home-advice-ico1,
+        .home-advice-ico2,
+        .home-advice-ico3 {
+            bottom: auto;
+            top: 50%;
+            transform: translate3d(0, -50%, 0);
         }
     }
     .home-advice-category {
@@ -1998,7 +2043,9 @@
             }
         }
     }
-    .articles-item {
+    .articles-item,
+    .advices-expert,
+    .advices-list .home-advice {
         margin-bottom: 45px;
     }
     .articles-item-img {
@@ -2108,6 +2155,47 @@
             line-height: 36px;
             max-height: 180px;
         }
+    }
+    .advices-expert {
+        height: auto !important;
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-bottom: 18px;
+        margin-left: -45px;
+        margin-right: -45px;
+    }
+    .advices-expert-item {
+        margin-bottom: 28px;
+        blockquote {
+            padding-top: 5px;
+            padding-right: 130px;
+            p {
+                font-size: 30px;
+                line-height: 35px;
+                letter-spacing: -0.3px;
+                &:before {
+                    margin-right: 20px;
+                }
+            }
+            span {
+                padding-top: 14px;
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: 0.4px;
+            }
+            img {
+                top: 0;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+    }
+    .advices-expert-title {
+        margin-bottom: 9px;
+    }
+    .advices-expert-bg {
+        top: 20%;
+        left: auto;
+        right: 0;
     }
 }
 @media (max-width: 1024px) {
@@ -2874,7 +2962,9 @@
             }
         }
     }
-    .articles-item {
+    .articles-item,
+    .advices-expert,
+    .advices-list .home-advice {
         margin-bottom: 25px;
     }
     .articles-item-img {
@@ -2896,6 +2986,9 @@
         background: $p;
         min-height: 135px;
         padding-top: 18px;
+        .home-advice-number {
+            padding: 0 20px 18px 0;
+        }
     }
     .articles-item-category {
         font-size: 13px;
@@ -3010,6 +3103,54 @@
             max-height: 120px;
         }
     }
+    .advices-expert {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .advices-expert-item {
+        margin-bottom: 17px;
+        blockquote {
+            padding-right: 0;
+            padding-top: 0;
+            p {
+                font-size: 23px;
+                line-height: 27px;
+                letter-spacing: -0.4px;
+                margin-bottom: 11px;
+                &:before {
+                    margin-right: 12px;
+                    top: 4px;
+                }
+            }
+            span {
+                display: flex;
+                min-height: 54px;
+                align-items: center;
+                justify-content: flex-end;
+                font-size: 14px;
+                line-height: 18px;
+                padding-top: 0;
+                padding-right: 55px;
+            }
+            img {
+                top: auto;
+                bottom: 10px;
+                width: 38px;
+            }
+        }
+    }
+    .advices-expert-title {
+        margin-bottom: 26px;
+    }
+    .advices-expert-bg {
+        right: 20%;
+        .svg {
+            position: relative;
+            left: -20%;
+        }
+    }
 }
 @include media-breakpoint-down(xs) {    //max-width: 575px
     .home-article-x2 {
@@ -3026,5 +3167,8 @@
     .all-services-hero {
         background-position: 10% 100%;
         background-size: 230% auto;
+    }
+    .advices-expert-bg {
+        top: 50%;
     }
 }

@@ -7077,6 +7077,10 @@ a.submenu-business:before {
   bottom: 37px;
 }
 
+.articles-item-content .home-advice-number {
+  padding-top: 23px;
+}
+
 .articles-item-category {
   font-size: 18px;
   line-height: 22px;
@@ -7507,6 +7511,120 @@ input.search-form-text::placeholder {
   font-size: 32px;
   line-height: 36px;
   max-height: 180px;
+}
+
+.advices-popular {
+  padding-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.advices-expert {
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 60px;
+  position: relative;
+  background: #4e72cd;
+  color: #ffffff;
+  padding: 33px 9.091% 12px;
+}
+
+.advices-expert-content {
+  position: relative;
+  z-index: 2;
+}
+
+.advices-expert-item {
+  margin-bottom: 42px;
+  text-align: right;
+}
+
+.advices-expert-item blockquote {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  padding-right: 120px;
+}
+
+.advices-expert-item blockquote p {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+}
+
+.advices-expert-item blockquote p:before {
+  content: "“";
+  display: inline-block;
+  vertical-align: bottom;
+  position: relative;
+  top: 7px;
+  margin-right: 7px;
+  font-size: 65px;
+  line-height: 22px;
+  font-weight: bold;
+  color: #3bd3c7;
+}
+
+.advices-expert-item blockquote span {
+  display: block;
+  padding-top: 12px;
+  opacity: 0.55;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+
+.advices-expert-item blockquote img {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+  width: 86px;
+  border-radius: 50%;
+}
+
+.advices-expert-title {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-bottom: 49px;
+}
+
+.advices-expert-bg {
+  position: absolute;
+  top: 40px;
+  left: 25%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.advices-list .home-advice {
+  margin-bottom: 60px;
+}
+
+.advices-list .home-advice-img {
+  height: 0;
+  padding-top: 100%;
+  background-color: #e8e8e8;
+}
+
+.advices-list .home-advice-category {
+  font-weight: 900;
+}
+
+.advices-list .home-advice-title a,
+.advices-list .home-advice-number a {
+  color: #040404;
+}
+
+.advices-list .home-advice-title a:hover,
+.advices-list .home-advice-number a:hover {
+  color: #525252;
 }
 
 .arrow {
@@ -8799,7 +8917,9 @@ a.link-hovered .arrow-bottom:after {
   .article-popular-item-title {
     padding-right: 29px;
   }
-  .articles-item {
+  .articles-item,
+  .advices-expert,
+  .advices-list .home-advice {
     margin-bottom: 50px;
   }
   .articles-item-title {
@@ -8808,7 +8928,8 @@ a.link-hovered .arrow-bottom:after {
     line-height: 42px;
     max-height: 168px;
   }
-  .articles-item-main {
+  .articles-item-main,
+  .advices-expert-title {
     font-size: 20px;
     line-height: 26px;
   }
@@ -8862,6 +8983,20 @@ a.link-hovered .arrow-bottom:after {
   .all-services-product-title {
     padding-right: 33px;
   }
+  .advices-expert-item {
+    margin-bottom: 32px;
+  }
+  .advices-expert-item blockquote p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .advices-expert-item blockquote span {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .advices-expert-title {
+    margin-bottom: 39px;
+  }
 }
 
 @media (max-width: 1424px) {
@@ -8908,7 +9043,8 @@ a.link-hovered .arrow-bottom:after {
   .article-hero-date {
     font-size: 18px;
   }
-  .articles-item-main {
+  .articles-item-main,
+  .advices-expert-title {
     font-size: 18px;
     line-height: 24px;
   }
@@ -8919,7 +9055,7 @@ a.link-hovered .arrow-bottom:after {
   .articles-item-title {
     font-size: 36px;
     line-height: 40px;
-    max-height: 160px;
+    max-height: 120px;
   }
   .all-services-hero-category {
     font-size: 16px;
@@ -8935,6 +9071,20 @@ a.link-hovered .arrow-bottom:after {
   }
   .all-services-hero-list li:before {
     top: 10px;
+  }
+  .advices-expert-item {
+    margin-bottom: 22px;
+  }
+  .advices-expert-item blockquote p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .advices-expert-item blockquote span {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .advices-expert-title {
+    margin-bottom: 28px;
   }
 }
 
@@ -9244,6 +9394,14 @@ a.link-hovered .arrow-bottom:after {
   }
   .home-advice-ico3 .svg {
     width: 75px;
+  }
+  .advices-list .home-advice-ico1,
+  .advices-list .home-advice-ico2,
+  .advices-list .home-advice-ico3 {
+    bottom: auto;
+    top: 50%;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
   }
   .home-advice-category {
     font-size: 13px;
@@ -10274,7 +10432,9 @@ a.link-hovered .arrow-bottom:after {
     top: 39px;
     width: 104px;
   }
-  .articles-item {
+  .articles-item,
+  .advices-expert,
+  .advices-list .home-advice {
     margin-bottom: 45px;
   }
   .articles-item-img {
@@ -10379,6 +10539,48 @@ a.link-hovered .arrow-bottom:after {
     font-size: 32px;
     line-height: 36px;
     max-height: 180px;
+  }
+  .advices-expert {
+    height: auto !important;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 18px;
+    margin-left: -45px;
+    margin-right: -45px;
+  }
+  .advices-expert-item {
+    margin-bottom: 28px;
+  }
+  .advices-expert-item blockquote {
+    padding-top: 5px;
+    padding-right: 130px;
+  }
+  .advices-expert-item blockquote p {
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: -0.3px;
+  }
+  .advices-expert-item blockquote p:before {
+    margin-right: 20px;
+  }
+  .advices-expert-item blockquote span {
+    padding-top: 14px;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.4px;
+  }
+  .advices-expert-item blockquote img {
+    top: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .advices-expert-title {
+    margin-bottom: 9px;
+  }
+  .advices-expert-bg {
+    top: 20%;
+    left: auto;
+    right: 0;
   }
 }
 
@@ -11172,7 +11374,9 @@ a.link-hovered .arrow-bottom:after {
     top: auto;
     bottom: 30px;
   }
-  .articles-item {
+  .articles-item,
+  .advices-expert,
+  .advices-list .home-advice {
     margin-bottom: 25px;
   }
   .articles-item-img {
@@ -11194,6 +11398,9 @@ a.link-hovered .arrow-bottom:after {
     background: #242933;
     min-height: 135px;
     padding-top: 18px;
+  }
+  .articles-item-content .home-advice-number {
+    padding: 0 20px 18px 0;
   }
   .articles-item-category {
     font-size: 13px;
@@ -11311,6 +11518,63 @@ a.link-hovered .arrow-bottom:after {
     line-height: 24px;
     max-height: 120px;
   }
+  .advices-expert {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .advices-expert-item {
+    margin-bottom: 17px;
+  }
+  .advices-expert-item blockquote {
+    padding-right: 0;
+    padding-top: 0;
+  }
+  .advices-expert-item blockquote p {
+    font-size: 23px;
+    line-height: 27px;
+    letter-spacing: -0.4px;
+    margin-bottom: 11px;
+  }
+  .advices-expert-item blockquote p:before {
+    margin-right: 12px;
+    top: 4px;
+  }
+  .advices-expert-item blockquote span {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 54px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 0;
+    padding-right: 55px;
+  }
+  .advices-expert-item blockquote img {
+    top: auto;
+    bottom: 10px;
+    width: 38px;
+  }
+  .advices-expert-title {
+    margin-bottom: 26px;
+  }
+  .advices-expert-bg {
+    right: 20%;
+  }
+  .advices-expert-bg .svg {
+    position: relative;
+    left: -20%;
+  }
 }
 
 @media (max-width: 575px) {
@@ -11326,6 +11590,9 @@ a.link-hovered .arrow-bottom:after {
   .all-services-hero {
     background-position: 10% 100%;
     background-size: 230% auto;
+  }
+  .advices-expert-bg {
+    top: 50%;
   }
 }
 

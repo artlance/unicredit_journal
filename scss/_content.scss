@@ -1442,6 +1442,9 @@
     left: 9.091%;
     right: 9.091%;
     bottom: 37px;
+    .home-advice-number {
+        padding-top: 23px;
+    }
 }
 .articles-item-category {
     font-size: 18px;
@@ -1796,3 +1799,100 @@ input.search-form-text {
     }
 }
 .all-services-product-tablet-x2 {}
+.advices-popular {
+    padding-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+.advices-expert {
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 60px;
+    position: relative;
+    background: $blue;
+    color: $w;
+    padding: 33px 9.091% 12px;
+}
+.advices-expert-content {
+    position: relative;
+    z-index: 2;
+}
+.advices-expert-item {
+    margin-bottom: 42px;
+    text-align: right;
+    blockquote {
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        padding-right: 120px;
+        p {
+            font-size: 22px;
+            line-height: 26px;
+            font-weight: bold;
+            letter-spacing: -0.2px;
+            &:before {
+                content: "“";
+                display: inline-block;
+                vertical-align: bottom;
+                position: relative;
+                top: 7px;
+                margin-right: 7px;
+                font-size: 65px;
+                line-height: 22px;
+                font-weight: bold;
+                color: #3bd3c7;
+            }
+        }
+        span {
+            display: block;
+            padding-top: 12px;
+            opacity: 0.55;
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 300;
+            letter-spacing: 0.3px;
+        }
+        img {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate3d(0, -50%, 0);
+            width: 86px;
+            border-radius: 50%;
+        }
+    }
+}
+.advices-expert-title {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin-bottom: 49px;
+}
+.advices-expert-bg {
+    position: absolute;
+    top: 40px;
+    left: 25%;
+    backface-visibility: hidden;
+}
+.advices-list {
+    .home-advice {
+        margin-bottom: 60px;
+    }
+    .home-advice-img {
+        height: 0;
+        padding-top: 100%;
+        background-color: #e8e8e8;
+    }
+    .home-advice-category {
+        font-weight: 900;
+    }
+    .home-advice-title a,
+    .home-advice-number a {
+        color: #040404;
+        &:hover {
+            color: $gray;
+        }
+    }
+}

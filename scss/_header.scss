@@ -105,16 +105,17 @@ input.header-search-text {
         height: 1px;
         background: #909090;
         transform: rotate(45deg);
-        transition: all $d $f;
+        transition: transform $d $f;
     }
     &:after {
         transform: rotate(-45deg);
     }
     &:hover {
-        &:before,
+        &:before {
+            transform: rotate(45deg) scale(1.2, 1);
+        }
         &:after {
-            left: -3px;
-            right: -3px;
+            transform: rotate(-45deg) scale(1.2, 1);
         }
     }
 }
@@ -418,7 +419,7 @@ a.submenu-business {
         height: 100%;
         background: $green;
         transform: translate3d(0, -10px, 0);
-        transition: all $d $f;
+        transition: transform $d $f, background-color $d $f;
     }
     &:after {
         transform: translate3d(0, 10px, 0);
@@ -438,10 +439,11 @@ a.submenu-business {
         &:hover {
             .navigation-toggle-icon {
                 background-color: $tr;
-                &:before,
+                &:before {
+                    transform: rotate(45deg) scale(1.2, 1);
+                }
                 &:after {
-                    left: -3px;
-                    right: -3px;
+                    transform: rotate(-45deg) scale(1.2, 1);
                 }
             }
         }

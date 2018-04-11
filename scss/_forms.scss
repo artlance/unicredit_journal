@@ -1,7 +1,7 @@
 /* forms */
 .error {
-    color: $error !important;
-    border-color: $error !important;
+    // color: $error !important;
+    // border-color: $error !important;
 }
 .success {
     color: $success !important;
@@ -28,6 +28,11 @@ input.input-text {
     transition: color $d $f, background-color $d $f, border-color $d $f, box-shadow $d $f;
     &::placeholder {
         color: $w;
+    }
+    &:focus {
+        &::placeholder {
+            color: #86a8fc;
+        }
     }
 }
 textarea.textarea {
@@ -358,16 +363,17 @@ body.modal-open {
         height: 3px;
         background: #6689e1;
         transform: rotate(45deg);
-        transition: all $d $f;
+        transition: transform $d $f;
     }
     &:after {
         transform: rotate(-45deg);
     }
     &:hover {
-        &:before,
+        &:before {
+            transform: rotate(45deg) scale(1.2, 1);
+        }
         &:after {
-            left: -3px;
-            right: -3px;
+            transform: rotate(-45deg) scale(1.2, 1);
         }
     }
 }
@@ -397,4 +403,10 @@ body.modal-open {
     font-weight: bold;
     margin-bottom: 36px;
 }
-
+.modal-data {
+    width: 850px;
+    p {
+        text-align: justify;
+        margin-bottom: 18px;
+    }
+}

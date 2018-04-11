@@ -464,6 +464,9 @@
     .footer-social-ico3 {
         left: 1px;
     }
+    .footer-social-ico5 {
+        top: 3px;
+    }
     .footer-copyright {
         padding-top: 30px;
         padding-bottom: 27px;
@@ -1144,6 +1147,9 @@
         width: 19px;
         top: 3px;
     }
+    .footer-social-ico5 {
+        top: 4px;
+    }
     .footer-copyright {
         padding-bottom: 30px;
         p {
@@ -1685,7 +1691,7 @@
         padding-right: 0;
         padding-top: 24px;
         padding-bottom: 38px;
-        overflow: hidden;
+        overflow-x: hidden;
         .close {
             top: 52px;
         }
@@ -2745,7 +2751,7 @@
     }
     .services-order-step-input,
     .services-order-step-city {
-        margin-bottom: 8px;
+        margin-bottom: 22px;
         &:before {
             left: -20px;
         }
@@ -2797,6 +2803,12 @@
         line-height: 1.12;
         font-size: 32px;
         margin-bottom: 30px;
+    }
+    .modal-data {
+        width: 600px;
+        p {
+            font-size: 18px;
+        }
     }
     .compare-table {
         display: block;

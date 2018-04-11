@@ -664,6 +664,7 @@
             color: #24ada2;
             letter-spacing: -0.2px;
             &:hover {
+                color: $lh;
                 .svg-fill {
                     fill: $lh;
                 }
@@ -765,6 +766,18 @@
             opacity: 1;
         }
     }
+    label.error {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        margin-top: 6px;
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 300;
+        color: #fe9e9e;
+        letter-spacing: -0.3px;
+    }
 }
 .services-order-step-city {
     position: relative;
@@ -794,6 +807,18 @@
                 transform: rotate(-180deg);
             }
         }
+    }
+    label.error {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        margin-top: 6px;
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 300;
+        color: #fe9e9e;
+        letter-spacing: -0.3px;
     }
 }
 .services-order-step-city-toggle {

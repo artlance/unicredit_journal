@@ -640,9 +640,9 @@
                                 </div>
                                 <div class="services-account-documents-list-wrapper">
                                     <ul class="services-account-documents-list">
-                                        <li><a href="#"><strong>Документы на открытие счета для ИП</strong> (.pdf)&nbsp;<span class="services-account-download"><span class="svg"><svg width="17" height="22" viewBox="0 0 17 22" xmlns="http://www.w3.org/2000/svg"><g fill="#24ada2" class="svg-fill" fill-rule="nonzero"><path d="M1.02 18.5h15v3h-15zM17.05 10.01l-2.06-2.18-5.3 5V0h-3v12.2L2.06 7.83 0 10.01l8.52 8.05z"/></g></svg></span></span></a></li>
-                                        <li><a href="#"><strong>Документы на открытие счета для нотариуса</strong> (.pdf)&nbsp;<span class="services-account-download"><span class="svg"><svg width="17" height="22" viewBox="0 0 17 22" xmlns="http://www.w3.org/2000/svg"><g fill="#24ada2" class="svg-fill" fill-rule="nonzero"><path d="M1.02 18.5h15v3h-15zM17.05 10.01l-2.06-2.18-5.3 5V0h-3v12.2L2.06 7.83 0 10.01l8.52 8.05z"/></g></svg></span></span></a></li>
-                                        <li><a href="#"><strong>Документы на открытие счета для капитального ремонта</strong> (.pdf)&nbsp;<span class="services-account-download"><span class="svg"><svg width="17" height="22" viewBox="0 0 17 22" xmlns="http://www.w3.org/2000/svg"><g fill="#24ada2" class="svg-fill" fill-rule="nonzero"><path d="M1.02 18.5h15v3h-15zM17.05 10.01l-2.06-2.18-5.3 5V0h-3v12.2L2.06 7.83 0 10.01l8.52 8.05z"/></g></svg></span></span></a></li>
+                                        <li><a href="#"><strong>Документы на открытие счета для ИП</strong>&nbsp;<span class="services-account-download"><span class="svg"><svg width="17" height="22" viewBox="0 0 17 22" xmlns="http://www.w3.org/2000/svg"><g fill="#24ada2" class="svg-fill" fill-rule="nonzero"><path d="M1.02 18.5h15v3h-15zM17.05 10.01l-2.06-2.18-5.3 5V0h-3v12.2L2.06 7.83 0 10.01l8.52 8.05z"/></g></svg></span></span></a></li>
+                                        <li><a href="#"><strong>Документы на открытие счета для нотариуса</strong>&nbsp;<span class="services-account-download"><span class="svg"><svg width="17" height="22" viewBox="0 0 17 22" xmlns="http://www.w3.org/2000/svg"><g fill="#24ada2" class="svg-fill" fill-rule="nonzero"><path d="M1.02 18.5h15v3h-15zM17.05 10.01l-2.06-2.18-5.3 5V0h-3v12.2L2.06 7.83 0 10.01l8.52 8.05z"/></g></svg></span></span></a></li>
+                                        <li><a href="#"><strong>Документы на открытие счета для капитального ремонта</strong>&nbsp;<span class="services-account-download"><span class="svg"><svg width="17" height="22" viewBox="0 0 17 22" xmlns="http://www.w3.org/2000/svg"><g fill="#24ada2" class="svg-fill" fill-rule="nonzero"><path d="M1.02 18.5h15v3h-15zM17.05 10.01l-2.06-2.18-5.3 5V0h-3v12.2L2.06 7.83 0 10.01l8.52 8.05z"/></g></svg></span></span></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -669,128 +669,130 @@
                                     <h3>Заявка</h3>
                                     <div class="services-order-title-info">Шаг <span>1</span> из 2</div>
                                 </div>
-                                <div class="services-order-step services-order-step-1">
-                                    <h5>Информация о компании</h5>
-                                    <div class="row">
-                                        <div class="col-lg-7 col-md-11 col-23">
-                                            <div class="services-order-step-input error clearfix">
-                                                <input type="text" class="input-text" placeholder="Компания">
+                                <form action="" id="services-order-form">
+                                    <div class="services-order-step services-order-step-1">
+                                        <h5>Информация о компании</h5>
+                                        <div class="row">
+                                            <div class="col-lg-7 col-md-11 col-23">
+                                                <div class="services-order-step-input error clearfix">
+                                                    <input type="text" class="input-text" placeholder="Компания">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <!-- /.col -->
-                                        <div class="col-lg-7 offset-md-1 col-md-11 col-23">
-                                            <div class="services-order-step-input clearfix">
-                                                <input type="text" class="input-text" placeholder="ИНН">
+                                            <!-- /.col -->
+                                            <div class="col-lg-7 offset-md-1 col-md-11 col-23">
+                                                <div class="services-order-step-input error clearfix">
+                                                    <input type="text" class="input-text input-text-number" placeholder="ИНН" minlength="11" name="numberINN" id="numberINN">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <!-- /.col -->
-                                        <div class="col-lg-7 offset-lg-1 col-md-11 col-23">
-                                            <div class="services-order-step-city error drop">
-                                                <a href="#" class="services-order-step-city-toggle drop-toggle">
-                                                    <span class="services-order-step-city-toggle-text">Город</span>
-                                                    <span class="services-order-step-city-toggle-arrow">
-                                                        <span class="svg">
-                                                            <svg width="19" height="11" viewBox="0 0 19 11" xmlns="http://www.w3.org/2000/svg"><path d="M17.92 1.186L9.6 8.698 1.28 1.186" stroke="#ffffff" stroke-width="5" fill="none" fill-rule="evenodd"/></svg>
+                                            <!-- /.col -->
+                                            <div class="col-lg-7 offset-lg-1 col-md-11 col-23">
+                                                <div class="services-order-step-city error drop">
+                                                    <a href="#" class="services-order-step-city-toggle drop-toggle">
+                                                        <span class="services-order-step-city-toggle-text">Город</span>
+                                                        <span class="services-order-step-city-toggle-arrow">
+                                                            <span class="svg">
+                                                                <svg width="19" height="11" viewBox="0 0 19 11" xmlns="http://www.w3.org/2000/svg"><path d="M17.92 1.186L9.6 8.698 1.28 1.186" stroke="#ffffff" stroke-width="5" fill="none" fill-rule="evenodd"/></svg>
+                                                            </span>
                                                         </span>
-                                                    </span>
-                                                </a>
-                                                <div class="services-order-step-city-panel drop-block">
-                                                    <div class="services-order-step-city-panel-scroll scroll-pane">
-                                                        <ul class="services-order-step-city-list">
-                                                            <li><a href="#">Архангельск<span></span></a></li>
-                                                            <li><a href="#">Барнаул<span></span></a></li>
-                                                            <li><a href="#">Вологда<span></span></a></li>
-                                                            <li><a href="#">Долгопрудный<span></span></a></li>
-                                                            <li><a href="#">Екатеринбург<span></span></a></li>
-                                                            <li><a href="#">Иркуртск<span></span></a></li>
-                                                            <li><a href="#">Киров<span></span></a></li>
-                                                            <li><a href="#">Москва<span></span></a></li>
-                                                            <li><a href="#">Норильск<span></span></a></li>
-                                                            <li><a href="#">Оренбург<span></span></a></li>
-                                                            <li><a href="#">Павловск<span></span></a></li>
-                                                            <li><a href="#">Ростов на Дону<span></span></a></li>
-                                                            <li><a href="#">Рязань<span></span></a></li>
-                                                            <li><a href="#">Саратов<span></span></a></li>
-                                                        </ul>
+                                                    </a>
+                                                    <div class="services-order-step-city-panel drop-block">
+                                                        <div class="services-order-step-city-panel-scroll scroll-pane">
+                                                            <ul class="services-order-step-city-list">
+                                                                <li><a href="#">Архангельск<span></span></a></li>
+                                                                <li><a href="#">Барнаул<span></span></a></li>
+                                                                <li><a href="#">Вологда<span></span></a></li>
+                                                                <li><a href="#">Долгопрудный<span></span></a></li>
+                                                                <li><a href="#">Екатеринбург<span></span></a></li>
+                                                                <li><a href="#">Иркуртск<span></span></a></li>
+                                                                <li><a href="#">Киров<span></span></a></li>
+                                                                <li><a href="#">Москва<span></span></a></li>
+                                                                <li><a href="#">Норильск<span></span></a></li>
+                                                                <li><a href="#">Оренбург<span></span></a></li>
+                                                                <li><a href="#">Павловск<span></span></a></li>
+                                                                <li><a href="#">Ростов на Дону<span></span></a></li>
+                                                                <li><a href="#">Рязань<span></span></a></li>
+                                                                <li><a href="#">Саратов<span></span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /.services-order-step-city-panel -->
+                                                </div>
+                                                <!-- /.services-order-step-city -->
+                                            </div>
+                                            <!-- /.col -->
+                                            <div class="col-23">
+                                                <div class="services-order-step-error">Все поля обязательны для заполнения</div>
+                                            </div>
+                                            <!-- /.col -->
+                                        </div>
+                                        <!-- /.row -->
+                                        <div class="services-order-step-1-next">
+                                            <a href="#" class="button"><span class="button-arrow">Следующий шаг</span></a>
+                                        </div>
+                                    </div>
+                                    <!-- /.services-order-step -->
+                                    <div class="services-order-step services-order-step-2">
+                                        <h5>Контактная информация</h5>
+                                        <div class="row">
+                                            <div class="col-lg-7 col-md-11 col-23">
+                                                <div class="services-order-step-input clearfix">
+                                                    <input type="text" class="input-text" placeholder="Фамилия">
+                                                </div>
+                                            </div>
+                                            <!-- /.col -->
+                                            <div class="col-lg-7 offset-md-1 col-md-11 col-23">
+                                                <div class="services-order-step-input clearfix">
+                                                    <input type="text" class="input-text" placeholder="Имя">
+                                                </div>
+                                            </div>
+                                            <!-- /.col -->
+                                            <div class="col-lg-7 offset-lg-1 col-md-11 col-23">
+                                                <div class="services-order-step-input clearfix">
+                                                    <input type="text" class="input-text" placeholder="Отчество">
+                                                </div>
+                                            </div>
+                                            <!-- /.col -->
+                                            <div class="col-lg-7 offset-lg-0 col-md-11 offset-md-1 col-23">
+                                                <div class="services-order-step-input clearfix">
+                                                    <input type="tel" class="input-text phone-mask" placeholder="Мобильный телефон">
+                                                </div>
+                                            </div>
+                                            <!-- /.col -->
+                                            <div class="col-lg-7 offset-lg-1 col-md-11 col-23">
+                                                <div class="services-order-step-input clearfix">
+                                                    <input type="tel" class="input-text phone-mask" placeholder="Повторите мобильный телефон">
+                                                </div>
+                                            </div>
+                                            <!-- /.col -->
+                                            <div class="col-lg-7 offset-md-1 col-md-11 col-23">
+                                                <div class="services-order-step-input error clearfix">
+                                                    <input type="email" class="input-text ignore" placeholder="E-mail">
+                                                </div>
+                                            </div>
+                                            <!-- /.col -->
+                                            <div class="col-23">
+                                                <div class="services-order-step-confirm">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="checkbox-data">
+                                                        <label for="checkbox-data">Я согласен с обработкой моих <a href="#personal-data" data-toggle="modal">персональных данных.</a></label>
                                                     </div>
                                                 </div>
-                                                <!-- /.services-order-step-city-panel -->
+                                                <div class="services-order-step-error">Заполните поля корректно</div>
                                             </div>
-                                            <!-- /.services-order-step-city -->
+                                            <!-- /.col -->
                                         </div>
-                                        <!-- /.col -->
-                                        <div class="col-23">
-                                            <div class="services-order-step-error hidden">Заполните поля корректно</div>
-                                        </div>
-                                        <!-- /.col -->
-                                    </div>
-                                    <!-- /.row -->
-                                    <div class="services-order-step-1-next">
-                                        <a href="#" class="button"><span class="button-arrow">Следующий шаг</span></a>
-                                    </div>
-                                </div>
-                                <!-- /.services-order-step -->
-                                <div class="services-order-step services-order-step-2">
-                                    <h5>Контактная информация</h5>
-                                    <div class="row">
-                                        <div class="col-lg-7 col-md-11 col-23">
-                                            <div class="services-order-step-input clearfix">
-                                                <input type="text" class="input-text" placeholder="Фамилия">
+                                        <!-- /.row -->
+                                        <div class="services-order-step-buttons clearfix">
+                                            <div class="services-order-step-2-back">
+                                                <a href="#" class="button button-bordered"><span class="button-arrow-left">Предыдущий шаг</span></a>
                                             </div>
-                                        </div>
-                                        <!-- /.col -->
-                                        <div class="col-lg-7 offset-md-1 col-md-11 col-23">
-                                            <div class="services-order-step-input clearfix">
-                                                <input type="text" class="input-text" placeholder="Имя">
+                                            <div class="services-order-step-2-send">
+                                                <a href="#success" data-toggle="modal" class="button"><span class="button-arrow">Отправить заявку</span></a>
                                             </div>
-                                        </div>
-                                        <!-- /.col -->
-                                        <div class="col-lg-7 offset-lg-1 col-md-11 col-23">
-                                            <div class="services-order-step-input clearfix">
-                                                <input type="text" class="input-text" placeholder="Отчество">
-                                            </div>
-                                        </div>
-                                        <!-- /.col -->
-                                        <div class="col-lg-7 offset-lg-0 col-md-11 offset-md-1 col-23">
-                                            <div class="services-order-step-input clearfix">
-                                                <input type="tel" class="input-text phone-mask" placeholder="Мобильный телефон">
-                                            </div>
-                                        </div>
-                                        <!-- /.col -->
-                                        <div class="col-lg-7 offset-lg-1 col-md-11 col-23">
-                                            <div class="services-order-step-input clearfix">
-                                                <input type="tel" class="input-text phone-mask" placeholder="Повторите мобильный телефон">
-                                            </div>
-                                        </div>
-                                        <!-- /.col -->
-                                        <div class="col-lg-7 offset-md-1 col-md-11 col-23">
-                                            <div class="services-order-step-input clearfix">
-                                                <input type="email" class="input-text" placeholder="E-mail">
-                                            </div>
-                                        </div>
-                                        <!-- /.col -->
-                                        <div class="col-23">
-                                            <div class="services-order-step-confirm">
-                                                <div class="checkbox">
-                                                    <input type="checkbox" id="checkbox-data" checked="checked">
-                                                    <label for="checkbox-data">Я согласен с обработкой моих <a href="#">персональных данных.</a></label>
-                                                </div>
-                                            </div>
-                                            <div class="services-order-step-error hidden">Заполните поля корректно</div>
-                                        </div>
-                                        <!-- /.col -->
-                                    </div>
-                                    <!-- /.row -->
-                                    <div class="services-order-step-buttons clearfix">
-                                        <div class="services-order-step-2-back">
-                                            <a href="#" class="button button-bordered"><span class="button-arrow-left">Предыдущий шаг</span></a>
-                                        </div>
-                                        <div class="services-order-step-2-send">
-                                            <a href="#success" data-toggle="modal" class="button"><span class="button-arrow">Отправить заявку</span></a>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- /.services-order-step -->
+                                    <!-- /.services-order-step -->
+                                </form>
                             </div>
                             <!-- /.col -->
                         </div>
@@ -987,6 +989,17 @@
         <div class="modal-success-content">
             <div class="modal-success-title">Спасибо!</div>
             <p>Ваша заявка увпешно отправлена!</p>
+        </div>
+        <!-- /.modal-success-content -->
+    </div>
+    <!-- /.modal -->
+    <div class="modal modal-success modal-data modal-center" id="personal-data" tabindex="-1" role="dialog">
+        <a href="#" class="close" data-dismiss="modal" aria-hidden="true" title="Закрыть"><span class="close-icon"></span></a>
+        <div class="modal-success-content">
+            <div class="modal-success-title">Согласие на обработку данных</div>
+            <p>Настоящим выражаю свое согласие АО ЮниКредит Банку (г. Москва, Пречистенская наб., д.9) (далее — Банк) на обработку (сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение) моих персональных данных (любой информации, предоставленной мною в настоящем согласии, как с использованием средств автоматизации, так и без использования таких средств, в целях направления мне рекламы продуктов Банка, рекламы продуктов партнёров Банка и совместных продуктов Банка и его партнёров, с даты настоящего согласия на срок 75 лет.</p>
+            <p>Вышеуказанные персональные данные являются необходимыми для заявленной цели обработки. Банк прекращает обработку персональных данных, а персональные данные подлежат уничтожению через 75 лет.</p>
+            <p>Настоящее согласие на обработку моих персональных данных может быть отозвано мной путем подачи письменного уведомления в Банк.</p>
         </div>
         <!-- /.modal-success-content -->
     </div>

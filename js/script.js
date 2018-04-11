@@ -346,6 +346,33 @@ $(document).ready(function(){
 
     //------------------------------------------------------------------------//
 
+    $('.input-text-number').keypress(function(event){
+      event = event || window.event;
+      if (event.charCode && event.charCode!=0 && event.charCode!=46 && (event.charCode < 48 || event.charCode > 57) )
+        return false;
+    });
+
+    //------------------------------------------------------------------------//
+
+    //services order form
+    $('#services-order-form').validate({
+        ignore: ".ignore",
+        rules: {
+            numberINN: {
+                number: true,
+                minlength: 11
+            }
+        },
+        messages: {
+            numberINN: {
+                number: "Введите только цифры",
+                minlength: "ИНН слишком короткий"
+            }
+        }
+    });
+
+    //------------------------------------------------------------------------//
+
 });//document ready
 
 //*********************************************************************//

@@ -1378,6 +1378,9 @@
     }
 }
 .article-content {}
+.article-content > * {
+    visibility: hidden;
+}
 .article-popular-clone {}
 .article-product-block {
     .home-article {
@@ -1474,7 +1477,7 @@
 .articles-item-category {
     font-size: 18px;
     line-height: 22px;
-    font-weight: 900;
+    font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 13px;
     a {
@@ -1617,6 +1620,7 @@ input.search-form-text {
         font-weight: 300;
         color: #111111;
         letter-spacing: -0.2px;
+        padding-top: 17px;
     }
 }
 .search-result-category {
@@ -1628,18 +1632,17 @@ input.search-form-text {
     a {
         display: inline-block;
         vertical-align: top;
-        padding: 2px 10px 3px;
-        margin-left: -11px;
+        padding: 3px 0 4px;
         text-align: center;
         color: #24ada2;
-        border: 1px solid $tr;
         &:hover {
             color: $lh;
         }
     }
     &.active {
         a {
-            border-color: #24ada2;
+            padding: 2px 10px 3px;
+            border: 1px solid #24ada2;
             &:hover {
                 border-color: $lh;
             }
@@ -1648,7 +1651,6 @@ input.search-form-text {
 }
 .search-result-title {
     padding-right: 40px;
-    margin-bottom: 17px;
     font-size: 23px;
     line-height: 28px;
     font-weight: bold;
@@ -1671,17 +1673,9 @@ input.search-form-text {
     min-height: 236px;
 }
 .all-services-hero-category {
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 900;
+    font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 17px;
-    a {
-        color: #4fb4ac;
-        &:hover {
-            color: $lh;
-        }
-    }
 }
 .all-services-hero-title {
     margin-bottom: 38px;
@@ -1854,6 +1848,9 @@ input.search-form-text {
             line-height: 26px;
             font-weight: bold;
             letter-spacing: -0.2px;
+            a {
+                color: $w;
+            }
             &:before {
                 content: "“";
                 display: inline-block;
@@ -1913,11 +1910,15 @@ input.search-form-text {
     .home-advice-category {
         font-weight: 900;
     }
-    .home-advice-title a,
-    .home-advice-number a {
+    .home-advice-title a {
         color: #040404;
         &:hover {
             color: $gray;
+        }
+    }
+    .home-advice-number {
+        strong {
+            color: #040404;
         }
     }
 }
@@ -1941,7 +1942,7 @@ input.search-form-text {
         vertical-align: top;
         padding-top: 0;
         margin-right: 48px;
-        a {
+        strong {
             font-size: 22px;
             line-height: 1.3334;
             padding-left: 32px;
@@ -2034,4 +2035,24 @@ input.search-form-text {
 }
 .advice-social {
     padding-left: 6.6667%;
+}
+.services-packages-list-wrapper {
+    margin-bottom: 32px;
+    .jspVerticalBar {
+        display: none !important;
+    }
+}
+.services-packages-list {
+    display: flex;
+    padding-bottom: 40px;
+}
+.services-packages-list-item {
+    flex: 0 0 26.08696%;
+    max-width: 26.08696%;
+    padding-left: 4.34783%;
+    &:first-child {
+        flex: 0 0 21.73913%;
+        max-width: 21.73913%;
+        padding-left: 0;
+    }
 }

@@ -66,7 +66,7 @@
         }
     }
     .header-submenu-panel {
-        padding: 28px 0 5px;
+        padding: 26px 0 7px;
     }
     .header-submenu {
         li {
@@ -380,7 +380,7 @@
         padding-right: 33px;
     }
     .home-advice-number {
-        a {
+        strong {
             padding-left: 25px;
             font-size: 16px;
             .svg {
@@ -394,7 +394,7 @@
     }
     .advice-hero-info {
         .home-advice-number {
-            a {
+            strong {
                 font-size: 20px;
             }
         }
@@ -574,10 +574,11 @@
     }
     .all-services-hero {
         margin-bottom: 37px;
+        padding: 7vw 0;
     }
     .all-services-hero-category {
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 16px;
+        line-height: 20px;
     }
     .all-services-hero-title {
         h1 {
@@ -690,7 +691,7 @@
     }
     .advice-hero-info {
         .home-advice-number {
-            a {
+            strong {
                 font-size: 18px;
             }
         }
@@ -710,8 +711,8 @@
         max-height: 120px;
     }
     .all-services-hero-category {
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 14px;
+        line-height: 18px;
     }
     .all-services-hero-title {
         h1 {
@@ -1067,7 +1068,7 @@
         max-height: 88px;
     }
     .home-advice-number {
-        a {
+        strong {
             font-size: 15px;
         }
     }
@@ -1077,7 +1078,7 @@
     .advice-hero-info {
         .home-advice-number {
             margin-right: 28px;
-            a {
+            strong {
                 font-size: 16px;
                 padding-left: 28px;
                 .svg {
@@ -2145,15 +2146,15 @@
             bottom: 0;
             left: 0;
             right: 0;
-            background: linear-gradient(to right, rgba(237, 237, 237, 0.65) 31%, rgba(0,0,0,0) 40%);
+            background: linear-gradient(to right, rgba(237, 237, 237, 0.65) 0%, rgba(0,0,0,0) 40%);
         }
     }
     .all-services-hero-content {
         min-height: 306px;
     }
     .all-services-hero-category {
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 13px;
+        line-height: 17px;
         margin-bottom: 13px;
     }
     .all-services-hero-title {
@@ -2265,6 +2266,23 @@
     }
     .advice-item-number {
         left: 0;
+    }
+    .services-packages-list-wrapper {
+        margin-bottom: 0;
+    }
+    .services-packages-list {
+        flex-wrap: wrap;
+        padding-bottom: 0;
+    }
+    .services-packages-list-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 0;
+        &:first-child {
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding-left: 0;
+        }
     }
 }
 @media (max-width: 1024px) {
@@ -3028,12 +3046,16 @@
                 line-height: 22px;
             }
             span {
-                padding-right: 70px;
+                display: inline-block;
+                vertical-align: top;
+                position: relative;
+                padding-right: 64px;
             }
             img {
                 width: 37px;
                 top: auto;
-                bottom: 30px;
+                bottom: -5px;
+                right: 0;
             }
         }
     }
@@ -3110,8 +3132,6 @@
         margin-bottom: 14px;
     }
     .search-result-img-wrapper {
-        flex: 0 0 135px;
-        max-width: 135px;
         margin-bottom: 25px;
     }
     .search-result-content {
@@ -3121,6 +3141,7 @@
         p {
             font-size: 16px;
             line-height: 22px;
+            padding-top: 16px;
         }
     }
     .search-result-category {
@@ -3129,7 +3150,6 @@
     .search-result-title {
         font-size: 18px;
         line-height: 22px;
-        margin-bottom: 16px;
         letter-spacing: 0;
     }
     .all-services-hero {
@@ -3138,7 +3158,7 @@
         background-position: 0 100%;
         background-size: 180% auto;
         &:before {
-            background: linear-gradient(to bottom, rgba(237, 237, 237, 0.65) 40%, rgba(0,0,0,0) 70%);
+            background: linear-gradient(to bottom, rgba(237, 237, 237, 0.65) 0%, rgba(0,0,0,0) 100%);
         }
     }
     .all-services-hero-content {

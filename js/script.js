@@ -192,22 +192,48 @@ $(document).ready(function(){
         pane.jScrollPane(
             {
                 showArrows: false,
-                autoReinitialise: true
+                autoReinitialise: true,
+                animateScroll: true,
+                animateDuration: 1000
             }
         );
     }
     scrollPane();
+
+    var scrollPaneResponsive = function() {
+        var mainWidth = $('.main').innerWidth();
+        if ( mainWidth < 1235 && $('.scroll-pane-responsive').length ) {
+            $('.scroll-pane-responsive').jScrollPane({showArrows: false, autoReinitialise: true, animateScroll: true, animateDuration: 1000}).data('jsp').destroy();
+        } else {
+            $('.scroll-pane-responsive').jScrollPane({showArrows: false, autoReinitialise: true, animateScroll: true, animateDuration: 1000}).data('jsp').reinitialise();
+        }
+    }
+    if ($('.scroll-pane-responsive').length) {
+        scrollPaneResponsive();
+    }
+
+    $('.scroll-pane-responsive').waypoint(function(direction) {
+        setTimeout(function(){
+            $('.scroll-pane-responsive').data('jsp').scrollTo(150);
+        }, 800);
+    }, {
+      offset: '80%'
+    });
+
     var scrollPaneResize = function() {
         if ($('.scroll-pane').length) {
             $('.scroll-pane').each(function(index, el) {
-                $(this).jScrollPane({showArrows: false, autoReinitialise: true}).data('jsp').destroy();
-                $('.scroll-pane').jScrollPane({showArrows: false, autoReinitialise: true}).data('jsp').reinitialise();
+                $(this).jScrollPane({showArrows: false, autoReinitialise: true, animateScroll: true, animateDuration: 1000}).data('jsp').destroy();
+                $('.scroll-pane').jScrollPane({showArrows: false, autoReinitialise: true, animateScroll: true, animateDuration: 1000}).data('jsp').reinitialise();
             });
         }
     }
     $(window).resize(function(){
         scrollPane();
         scrollPaneResize();
+        if ($('.scroll-pane-responsive').length) {
+            scrollPaneResponsive();
+        }
     });
 
     //------------------------------------------------------------------------//
@@ -382,7 +408,7 @@ $(window).load(function() {
     //load
 
     //article
-    $('.article-content > *').addClass('animationFadeIn');
+    $('.article-content > *').addClass('animationFadeInUp');
 
     //animation
     $('.animationFadeInUp').waypoint(function(direction) {

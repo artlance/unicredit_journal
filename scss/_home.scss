@@ -524,7 +524,7 @@
 .home-advice-number {
     display: block;
     padding-top: 14px;
-    a {
+    strong {
         display: inline-block;
         vertical-align: top;
         position: relative;
@@ -533,11 +533,6 @@
         line-height: 1.2;
         font-weight: 300;
         color: $w;
-        &:hover {
-            .svg-stroke {
-                stroke: $lh;
-            }
-        }
         .svg {
             position: absolute;
             left: 0;

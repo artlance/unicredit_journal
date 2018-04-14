@@ -108,8 +108,8 @@ $(document).ready(function(){
 
         if ( !menuIsActive ) {
             menuIsActive = true;
-            $(this).parents('li').siblings('li').find('.menu-toggle').removeClass('active');
-            $(this).toggleClass('active');
+            $(this).parents('li').siblings('li').removeClass('open');
+            $(this).parents('li').toggleClass('open');
             var toggleHash = $(this).prop('href');
             toggleHash = toggleHash.substring(toggleHash.indexOf('#')+1);
 
@@ -395,6 +395,18 @@ $(document).ready(function(){
                 minlength: "ИНН слишком короткий"
             }
         }
+    });
+
+    //------------------------------------------------------------------------//
+
+    $('.articles-item').on('click', function(event) {
+        event.preventDefault();
+        var articleLink = $(this).find('.articles-item-title a').attr('href');
+        window.location.href = articleLink;
+    });
+
+    $('.articles-item-category a').on('click', function(event) {
+        event.stopPropagation();
     });
 
     //------------------------------------------------------------------------//

@@ -1,13 +1,13 @@
 /* header */
 .header-global {
-    padding: 48px 0 42px;
+    padding: 25px 0 15px;
     position: relative;
 }
 .logo {
     padding-right: 10px;
     a {
         display: block;
-        max-width: 294px;
+        max-width: 230px;
         img {
             display: block;
             width: 100%;
@@ -21,8 +21,8 @@
 }
 .logo-title {
     display: block;
-    padding-top: 1px;
-    padding-left: 37px;
+    padding-left: 30px;
+    line-height: 1;
     font-weight: 300;
     color: $text;
     letter-spacing: 2px;
@@ -145,7 +145,7 @@ input.header-search-text {
             opacity: 0;
             content: "";
             position: absolute;
-            top: -54px;
+            top: -31px;
             left: -1px;
             right: -1px;
             height: 8px;
@@ -189,7 +189,12 @@ input.header-search-text {
                         stroke: $lh;
                     }
                 }
-                &.active {
+            }
+        }
+        &.open {
+            a {
+                color: #4e72cd;
+                &.menu-toggle {
                     .svg {
                         transform: rotate(-180deg);
                     }
@@ -202,29 +207,51 @@ input.header-search-text {
     display: none;
     margin-bottom: 30px;
     background: $blue;
-    padding: 37px 0 13px;
+    padding: 25px 0 5px;
 }
 .header-submenu {
     opacity: 0;
     transition: opacity $d $f;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
     list-style: none;
+    padding: 0 15%;
     li {
-        flex: 0 0 21.74%;
-        max-width: 21.74%;
-        margin-bottom: 26px;
+        margin-bottom: 22px;
         list-style: none;
         list-style-image: url(data:0);
+        padding-right: 42px;
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            margin-top: 1px;
+            right: 18px;
+            transform: translate3d(0, -50%, 0);
+            width: 7px;
+            height: 7px;
+            background: #27aea3;
+            border-radius: 50%;
+        }
+        &:last-child,
+        &:nth-child(4) {
+            padding-right: 0;
+            &:after {
+                display: none;
+            }
+        }
         a {
             display: block;
-            padding-right: 40px;
             color: $w;
             font-size: 17px;
             line-height: 19px;
             text-transform: uppercase;
-            letter-spacing: 0.3px;
+            letter-spacing: 0.4px;
+            &:hover {
+                color: #cddbff;
+            }
         }
     }
 }
@@ -234,14 +261,15 @@ input.header-search-text {
     }
 }
 a.submenu-business {
-    font-weight: 900;
+    font-weight: bold;
     position: relative;
+    padding-left: 34px;
     &:before {
         content: "";
         position: absolute;
         top: 50%;
         transform: translate3d(0, -50%, 0);
-        left: -34px;
+        left: 0;
         width: 22px;
         height: 21px;
         background: url('../upload/icon-business.svg') 0 0 no-repeat;
@@ -283,7 +311,7 @@ a.submenu-business {
     flex: 0 0 100%;
     max-width: 100%;
     text-align: center;
-    padding: 49px 0 43px;
+    padding: 32px 0 38px;
     & > li {
         font-size: 24px;
         line-height: 1.2;
@@ -331,35 +359,55 @@ a.submenu-business {
 }
 .navigation-submenu {
     display: none;
-    padding-top: 59px;
+    padding-top: 10px;
     &.open {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        max-width: 640px;
+        margin: 0 auto;
     }
     li {
-        flex: 0 0 40%;
-        max-width: 40%;
-        padding: 3px 29px 21px;
-        text-align: center;
+        padding-right: 59px;
+        margin-top: 34px;
         list-style: none;
         list-style-image: url(data:0);
+        position: relative;
+        line-height: 0;
+        font-size: 0;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 27px;
+            transform: translate3d(0, -50%, 0);
+            width: 5px;
+            height: 5px;
+            background: #27aea3;
+            border-radius: 50%;
+        }
+        &:nth-child(3n),
+        &:last-child {
+            padding-right: 0;
+            &:after {
+                display: none;
+            }
+        }
         a {
-            display: inline-block;
-            vertical-align: top;
+            display: block;
             color: $w;
             font-size: 14px;
             line-height: 16px;
             text-transform: uppercase;
             letter-spacing: 0.3px;
             &:hover {
-                color: $t;
+                color: #878c96;
             }
         }
     }
 }
 .navigation-footer {
-    padding: 75px 0 96px;
+    padding: 45px 0 53px;
     .footer-social {
         margin-top: 0;
         margin-bottom: 22px;
@@ -405,7 +453,7 @@ a.submenu-business {
     display: none;
     position: absolute;
     right: -11px;
-    top: -3px;
+    top: -1px;
     width: 50px;
     height: 50px;
     z-index: 9050;

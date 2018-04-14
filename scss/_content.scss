@@ -3,12 +3,17 @@
     clear: both;
 }
 .services-hero {
-    padding: 82px 0 220px;
+    padding-bottom: 167px;
     background-color: #f1f0f0;
+}
+.services-hero-wrapper {
+    padding: 78px 0 72px;
     background-position: 50% 100%;
     background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 .services-hero-content {
+    min-height: 212px;
     h5 {
         margin-bottom: 40px;
         font-size: 20px;
@@ -38,21 +43,20 @@
         letter-spacing: -0.5px;
     }
     p {
-        font-size: 26px;
-        line-height: 1.154;
+        font-size: 22px;
+        line-height: 28px;
         font-weight: 300;
         color: #111111;
-        letter-spacing: -0.2px;
-        margin-bottom: 26px;
+        padding-bottom: 26px;
     }
 }
 .services-features {
-    margin-top: -105px;
-    margin-bottom: 55px;
+    margin-top: -167px;
+    margin-bottom: 45px;
     color: $w;
 }
 .services-features-free {
-    padding: 46px 8.3334%;
+    padding: 46px 8.3334% 36px;
 }
 .services-features-free-title {
     font-size: 24px;
@@ -97,7 +101,7 @@
 .services-features-cta {
     position: relative;
     z-index: 2;
-    padding: 43px 9.091% 62px;
+    padding: 43px 9.091% 52px;
     h4 {
         font-size: 32px;
         line-height: 1.2;
@@ -279,7 +283,10 @@
     display: flex;
     align-items: center;
     height: 49px;
-    background: #525969;
+    background-color: #525969;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
     img {
         display: block;
         margin: 0 auto;
@@ -348,7 +355,10 @@
         width: 97px;
         height: 97px;
         margin: 0 auto;
-        background: #c3d1f6;
+        background-color: #c3d1f6;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     img {
         display: block;
@@ -400,7 +410,10 @@
         align-items: center;
         width: 48px;
         height: 48px;
-        background: #e6e6e6;
+        background-color: #e6e6e6;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
         border-radius: 50%;
     }
     img {
@@ -1441,6 +1454,7 @@
 }
 .articles {}
 .articles-item {
+    cursor: pointer;
     overflow: hidden;
     margin-bottom: 60px;
     position: relative;

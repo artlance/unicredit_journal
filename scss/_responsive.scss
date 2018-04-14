@@ -1,16 +1,16 @@
 /* responsive */
 @include media-breakpoint-down(lg) {    //max-width: 1599px
     .header-global {
-        padding-top: 38px;
-        padding-bottom: 32px;
+        padding-top: 14px;
     }
     .logo {
+        padding-top: 5px;
         a {
-            max-width: 230px;
+            max-width: 192px;
         }
     }
     .logo-title {
-        padding-left: 30px;
+        padding-left: 26px;
         font-size: 14px;
         letter-spacing: 1.5px;
     }
@@ -52,7 +52,7 @@
             font-size: 20px;
             line-height: 1.3;
             &:before {
-                top: -44px;
+                top: -20px;
                 height: 6px;
             }
             a {
@@ -66,24 +66,30 @@
         }
     }
     .header-submenu-panel {
-        padding: 26px 0 7px;
+        padding: 19px 0 3px;
     }
     .header-submenu {
+        padding: 0 20%;
         li {
-            margin-bottom: 21px;
+            margin-bottom: 16px;
+            padding-right: 40px;
+            &:after {
+                margin-top: 0;
+                width: 5px;
+                height: 5px;
+            }
             a {
-                padding-right: 34px;
                 font-size: 14px;
                 line-height: 16px;
             }
         }
     }
     a.submenu-business {
+        padding-left: 30px;
         &:before {
-            left: -31px;
-            width: 19px;
-            height: 18px;
-            background-size: 19px 18px;
+            width: 17px;
+            height: 16px;
+            background-size: 17px 16px;
         }
     }
     .arrow {
@@ -478,6 +484,9 @@
     .footer-copyright-sep {
         padding: 0 7px;
     }
+    .services-hero-wrapper {
+        padding: 5.64vw 0 5.16vw;
+    }
     .services-hero-content {
         h5 {
             margin-bottom: 35px;
@@ -494,8 +503,8 @@
             letter-spacing: -0.3px;
         }
         p {
-            font-size: 24px;
-            line-height: 1.1667;
+            font-size: 20px;
+            line-height: 26px;
         }
     }
     .services-package-basic-title-info {
@@ -652,6 +661,9 @@
         line-height: 1.3334;
         max-height: 120px;
     }
+    .services-hero-wrapper {
+        padding: 4.64vw 0 4.16vw;
+    }
     .services-hero-content {
         h5 {
             margin-bottom: 30px;
@@ -663,8 +675,8 @@
             margin-bottom: 35px;
         }
         p {
-            font-size: 22px;
-            line-height: 1.182;
+            font-size: 18px;
+            line-height: 26px;
         }
     }
     .package-advantages {
@@ -745,6 +757,9 @@
     .advices-expert-title {
         margin-bottom: 28px;
     }
+    .header-submenu {
+        padding: 0 16%;
+    }
 }
 @include media-breakpoint-down(md) {    //max-width: 1249px
     .container {
@@ -752,18 +767,8 @@
         padding-right: 45px;
     }
     .header-global {
-        padding-top: 34px;
-        padding-bottom: 30px;
-    }
-    .logo {
-        a {
-            max-width: 207px;
-        }
-    }
-    .logo-title {
-        padding-top: 0;
-        padding-left: 28px;
-        font-size: 13px;
+        padding-top: 15px;
+        padding-bottom: 16px;
     }
     .header-submenu-panel {
         display: none !important;
@@ -1158,13 +1163,14 @@
         }
     }
     .services-hero {
-        padding: 35px 0 62%;
-        background-position: 0 100%;
-        background-size: 161.73% auto;
+        padding-bottom: 133px;
+    }
+    .services-hero-wrapper {
+        padding: 4.6875vw 0 2.6vw;
     }
     .services-hero-content {
         h5 {
-            margin-bottom: 25px;
+            margin-bottom: 17px;
             padding-left: 45px;
             font-size: 14px;
             letter-spacing: 0.8px;
@@ -1174,28 +1180,27 @@
             }
         }
         h1 {
-            font-size: 46px;
-            line-height: 1.0435;
+            font-size: 38px;
+            line-height: 1;
             letter-spacing: -0.5px;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
         }
         p {
-            max-width: 60%;
             font-size: 18px;
             line-height: 1.2778;
         }
     }
     .services-features {
         margin-top: -133px;
-        margin-bottom: 51px;
+        margin-bottom: 39px;
     }
     .services-features-free {
-        padding: 41px 45px 28px;
+        padding: 31px 45px 15px;
     }
     .services-features-free-title {
         font-size: 22px;
         letter-spacing: -0.4px;
-        margin-bottom: 31px;
+        margin-bottom: 17px;
     }
     .services-features-free-list {
         margin-right: -45px;
@@ -1217,7 +1222,7 @@
         }
     }
     .services-features-cta {
-        padding: 45px 45px 50px;
+        padding: 25px 45px 40px;
         h4 {
             font-size: 29px;
             letter-spacing: -0.4px;
@@ -1226,7 +1231,7 @@
         p {
             font-size: 16px;
             line-height: 1.125;
-            margin-bottom: 43px;
+            margin-bottom: 23px;
         }
     }
     .services-features-cta-bg {
@@ -2290,6 +2295,10 @@
         background-position: -90% 100%;
         background-size: 128% auto;
     }
+    .services-hero-wrapper {
+        background-position: 20% 100%;
+        background-size: 115% auto;
+    }
 }
 @include media-breakpoint-down(sm) {    //max-width: 767px
     .container {
@@ -2297,8 +2306,18 @@
         padding-right: 25px;
     }
     .header-global {
-        padding-top: 21px;
-        padding-bottom: 16px;
+        padding-bottom: 14px;
+    }
+    .logo {
+        padding-top: 0;
+        a {
+            max-width: 173px;
+        }
+    }
+    .logo-title {
+        padding-left: 21px;
+        font-size: 13px;
+        letter-spacing: 0.3px;
     }
     .navigation-toggle {
         top: -8px;
@@ -2477,10 +2496,26 @@
             display: none;
         }
     }
+    .navigation-menu {
+        padding-bottom: 31px;
+    }
     .navigation-submenu {
+        padding-top: 27px;
+        padding-bottom: 5px;
+        &.open {
+            max-width: 180px;
+        }
         li {
             flex: 0 0 100%;
             max-width: 100%;
+            padding-right: 0;
+            margin-top: 30px;
+            &:after {
+                display: none;
+            }
+            a.submenu-business {
+                font-weight: 900;
+            }
         }
     }
     .navigation-footer {
@@ -2502,9 +2537,17 @@
         animation: none !important;
     }
     .services-hero {
-        padding-bottom: 65%;
+        padding-bottom: 0;
+    }
+    .services-hero-wrapper {
+        margin-left: -25px;
+        margin-right: -25px;
+        padding: 20px 25px 50%;
+        background-position: -5% 100%;
+        background-size: 180% auto;
     }
     .services-hero-content {
+        min-height: 0;
         h5 {
             margin-bottom: 19px;
         }
@@ -2514,20 +2557,20 @@
             margin-bottom: 19px;
         }
         p {
-            max-width: none;
             line-height: 1.2223;
+            padding-bottom: 10px;
         }
     }
     .services-features {
-        margin: 0 -25px 36px;
+        margin: 0 -25px 15px;
     }
     .services-features-free {
-        padding: 37px 25px 34px;
+        padding: 22px 25px 18px;
     }
     .services-features-free-title {
         font-size: 20px;
         letter-spacing: -0.2px;
-        margin-bottom: 23px;
+        margin-bottom: 12px;
     }
     .services-features-free-list {
         margin-right: 0;
@@ -2535,20 +2578,22 @@
             flex: 0 0 100%;
             max-width: 100%;
             padding-right: 0;
+            margin-bottom: 13px;
             span {
                 padding-right: 0;
+                min-height: 36px;
             }
         }
     }
     .services-features-cta {
-        padding: 51px 25px 55px;
+        padding: 16px 25px 27px;
         h4 {
             font-size: 28px;
             line-height: 1;
-            margin-bottom: 24px;
+            margin-bottom: 14px;
         }
         p {
-            margin-bottom: 39px;
+            margin-bottom: 18px;
         }
     }
     .services-registration {
@@ -2805,7 +2850,8 @@
         .modal-title {
             line-height: 1.12;
             font-size: 25px;
-            padding-left: 25px;
+            padding-left: 10px;
+            padding-right: 60px;
         }
         .close {
             top: 42px;
@@ -2841,22 +2887,23 @@
             tr {
                 display: block;
                 th {
-                    height: 105px;
+                    height: 59px;
                     width: auto;
-                    padding: 13px 0 0;
+                    padding: 25px 0 0 10px;
                     display: block;
+                    text-align: left;
+                    font-size: 15px;
                     &:first-child {
                         width: auto;
-                        padding: 0;
+                        padding: 23px 0 0 10px;
                         height: 82px;
-                        padding-top: 23px;
                         background: $white;
-                        text-align: center;
                         border-bottom: 1px solid #e8e8e8;
                     }
                     &:last-child {
+                        height: 85px;
                         width: auto;
-                        padding: 0;
+                        padding: 25px 0 26px 10px;
                     }
                 }
             }
@@ -2873,9 +2920,9 @@
                     border-top: 0;
                     font-size: 13px;
                     display: block;
-                    padding: 40px 10px 0;
+                    padding: 21px 10px 0;
                     width: 140px;
-                    height: 105px;
+                    height: 59px;
                     border-right: 1px solid #e8e8e8;
                     &:first-child {
                         height: 82px;
@@ -2884,14 +2931,15 @@
                         border-bottom: 1px solid #e8e8e8;
                     }
                     &:last-child {
-                        padding: 40px 10px;
+                        height: 85px;
+                        padding: 21px 10px 26px;
                     }
                 }
             }
         }
     }
     .compare-icon {
-        margin-bottom: 3px;
+        display: none;
     }
     .package-advantages {
         h5 {
@@ -3305,5 +3353,10 @@
     }
     .advices-expert-bg {
         top: 50%;
+    }
+    .services-hero-wrapper {
+        padding-bottom: 75%;
+        background-position: 10% 100%;
+        background-size: 250% auto;
     }
 }

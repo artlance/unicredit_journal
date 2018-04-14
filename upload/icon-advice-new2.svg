@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="250px" height="250px" viewBox="0 0 250 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2">
+            <path d="M156.4,128.4 C141.4,138.4 130.3,121.9 130.3,121.9 C125,114.7 121.2,122.1 121.2,122.1 C118.4,128.9 114.4,128.2 112,127.1 C110.8,126.5 110.2,125.1 110.6,123.8 L112.4,117.7 C113.2,115 115.1,112.8 117.7,111.7 L124.5,108.7 C126.9,107.6 129.1,107.9 132.1,108.5 L149.7,112.7 L156.4,128.4 Z" id="Shape" stroke="#344154" stroke-width="3"></path>
+            <path d="M160.1,137.1 L148.5,140.8 L141.2,130.7 C141.2,130.7 149.7,134.2 156.3,128.4 L160.1,137.1 Z" id="Shape" stroke="#344154" stroke-width="3"></path>
+            <polygon id="Shape" fill="#FFC124" fill-rule="nonzero" points="59.9 89 59.9 141.7 70.2 145.7 88.7 100.7"></polygon>
+            <polyline id="Shape" stroke="#344154" stroke-width="3" points="87.2 104.3 100.3 109.9 88.7 137.1 75.8 132.1"></polyline>
+            <polygon id="Shape" fill="#FFC124" fill-rule="nonzero" points="190.1 91.9 190.1 144.5 179.8 148.6 161.3 103.5"></polygon>
+            <polyline id="Shape" stroke="#344154" stroke-width="3" points="162.8 107.2 149.7 112.7 161.3 140 174.2 135"></polyline>
+            <path d="M140.4,130.6 L150.4,143.1 C151.2,144.1 151.4,145.3 151,146.5 C150,149.4 146.3,150.2 144.2,147.9 L130.5,133.3" id="Shape" stroke="#344154" stroke-width="3" stroke-linecap="round"></path>
+            <path d="M124.4,140.3 L135.9,152.4 C139,155.7 144.5,154.5 145.9,150.2 C145.9,150.1 145.9,150.1 146,150" id="Shape" stroke="#344154" stroke-width="3" stroke-linecap="round"></path>
+            <path d="M118.8,145.9 L128.4,156.5 C129.5,157.7 130.9,158.5 132.5,158.6 C134.3,158.7 136.6,158 138.5,154.9" id="Shape" stroke="#344154" stroke-width="3" stroke-linecap="round"></path>
+            <path d="M100.3,109.9 C100.3,109.9 110.8,109 119.4,111" id="Shape" stroke="#344154" stroke-width="3"></path>
+            <path d="M90.7,132.3 C90.7,132.3 103.9,141.4 118.3,155.5 L122.8,159.8 C125,162 128.9,160.8 129.4,157.7 C129.4,157.7 129.4,157.6 129.4,157.6" id="Shape" stroke="#344154" stroke-width="3"></path>
+            <path d="M98.3,138 L97.1,139.3 C96,140.6 96.1,142.6 97.4,143.7 C98.8,144.8 100.9,144.7 102,143.3 L103.1,142" id="Shape" stroke="#344154" stroke-width="3"></path>
+            <path d="M109.4,147.2 L106.8,150 C105.4,151.5 103.1,151.6 101.6,150.3 C100,148.9 99.9,146.6 101.2,145 L103.6,142.2" id="Shape" stroke="#344154" stroke-width="3"></path>
+            <path d="M109.4,147.2 L107.7,149 C106.3,150.5 106.4,152.9 107.9,154.3 C109.4,155.7 111.8,155.6 113.2,154.1 L114.9,152.2" id="Shape" stroke="#344154" stroke-width="3"></path>
+            <path d="M120,157.2 L119.1,158.1 C117.7,159.5 115.5,159.5 114.1,158.2 C112.7,156.9 112.6,154.6 114,153.2 L114.7,152.5" id="Shape" stroke="#344154" stroke-width="3"></path>
+        </g>
+    </g>
+</svg>

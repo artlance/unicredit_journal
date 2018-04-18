@@ -350,7 +350,8 @@
 .services-package-caption {}
 .services-package-img {
     margin-bottom: 33px;
-    span {
+    span,
+    a {
         display: flex;
         align-items: center;
         width: 97px;
@@ -1304,9 +1305,9 @@
     letter-spacing: 0.8px;
     margin-bottom: 26px;
     a {
-        color: #59ccc3;
+        color: $w;
         &:hover {
-            color: $lh;
+            color: $t;
         }
     }
 }
@@ -1496,9 +1497,9 @@
     text-transform: uppercase;
     margin-bottom: 13px;
     a {
-        color: #4fb4ac;
+        color: $w;
         &:hover {
-            color: $lh;
+            color: $t;
         }
     }
 }
@@ -1527,6 +1528,7 @@
     display: block;
 }
 .articles-category-item-img {
+    cursor: pointer;
     display: block;
     margin-bottom: 45px;
     height: 0;
@@ -1761,6 +1763,7 @@ input.search-form-text {
     }
 }
 .all-services-product {
+    cursor: pointer;
     position: relative;
     margin-bottom: 46px;
     overflow: hidden;
@@ -1794,7 +1797,7 @@ input.search-form-text {
     margin-bottom: 7px;
     font-size: 14px;
     line-height: 20px;
-    font-weight: 900;
+    font-weight: bold;
     text-transform: uppercase;
     a {
         color: $w;
@@ -1922,13 +1925,17 @@ input.search-form-text {
         padding-top: 100%;
         background-color: #e8e8e8;
     }
-    .home-advice-category {
-        font-weight: 900;
-    }
-    .home-advice-title a {
-        color: #040404;
-        &:hover {
-            color: $gray;
+    .home-advice-title {
+        a {
+            color: #040404;
+            &:hover {
+                color: $gray;
+            }
+        }
+        &.fake-hover {
+            a {
+                color: $gray;
+            }
         }
     }
     .home-advice-number {
@@ -1946,6 +1953,10 @@ input.search-form-text {
 .advice-hero-img {
     max-width: 190px;
     margin: 0 auto;
+    img {
+        display: block;
+        width: 100%;
+    }
 }
 .advice-hero-content {
     padding-right: 45px;

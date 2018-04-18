@@ -402,11 +402,37 @@ $(document).ready(function(){
     $('.articles-item').on('click', function(event) {
         event.preventDefault();
         var articleLink = $(this).find('.articles-item-title a').attr('href');
-        window.location.href = articleLink;
+        if ( articleLink != '#' ) {
+            window.location.href = articleLink;
+        }
     });
 
-    $('.articles-item-category a').on('click', function(event) {
+    $('.all-services-product').on('click', function(event) {
+        event.preventDefault();
+        var articleLink = $(this).find('.all-services-product-title a').attr('href');
+        if ( articleLink != '#' ) {
+            window.location.href = articleLink;
+        }
+    });
+
+    $('.articles-item-category a, .all-services-product-category a').on('click', function(event) {
         event.stopPropagation();
+    });
+
+    //------------------------------------------------------------------------//
+
+    $('.home-advice-img, .articles-category-item-img').hover(function() {
+        $(this).siblings('.home-advice-title').addClass('fake-hover');
+    }, function() {
+        $(this).siblings('.home-advice-title').removeClass('fake-hover');
+    });
+
+    $('.home-advice-img, .articles-category-item-img').on('click', function(event) {
+        event.preventDefault();
+        var adviceLink = $(this).siblings('.home-advice-title').find('a').attr('href');
+        if ( adviceLink != '#' ) {
+            window.location.href = adviceLink;
+        }
     });
 
     //------------------------------------------------------------------------//

@@ -246,6 +246,12 @@
             padding-right: 43px;
         }
     }
+    .home-article-product {
+        .home-article-category {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
     .home-article-product-img {
         height: 350px;
     }
@@ -253,9 +259,9 @@
         bottom: 48px;
     }
     .home-article-product-category {
-        padding: 0 30px 16px;
+        padding: 0 30px;
         font-size: 14px;
-        a {
+        span {
             padding: 3px 14px 4px;
         }
     }
@@ -911,8 +917,7 @@
     }
     .home-article-product-category {
         font-size: 13px;
-        padding-bottom: 14px;
-        a {
+        span {
             padding: 3px 12px;
         }
     }
@@ -1383,7 +1388,8 @@
     .services-package-img {
         flex: 0 0 20%;
         max-width: 20%;
-        span {
+        span,
+        a {
             margin: 0;
             width: 88px;
             height: 88px;
@@ -2377,12 +2383,18 @@
             padding-right: 20px;
         }
     }
+    .home-article-product {
+        .home-article-category {
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-bottom: 15px;
+        }
+    }
     .home-article-product-content {
         right: 0;
     }
     .home-article-product-category {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 0 20px;
     }
     .home-article-product-title {
         padding-left: 20px;
@@ -2680,7 +2692,8 @@
         flex: 0 0 88px;
         max-width: 88px;
         margin-bottom: 0;
-        span {
+        span,
+        a {
             width: 62px;
             height: 62px;
         }
@@ -2908,13 +2921,18 @@
             }
         }
         tbody {
-            display: flex;
+            display: block;
             overflow: auto;
+            white-space: nowrap;
+            font-size: 0;
             -webkit-overflow-scrolling: auto;
             overflow-scrolling: auto;
             tr {
-                display: block;
+                display: inline-block;
+                vertical-align: top;
+                width: 140px;
                 td {
+                    white-space: normal;
                     font-weight: normal;
                     border-top: 0;
                     font-size: 13px;

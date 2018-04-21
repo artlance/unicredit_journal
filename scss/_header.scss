@@ -43,9 +43,7 @@
     display: block;
     width: 28px;
     .svg {
-        svg {
-            width: 100%;
-        }
+        padding-top: 96.25%;
     }
     &:hover {
         .svg-stroke {
@@ -180,9 +178,7 @@ input.header-search-text {
                 .svg {
                     width: 18px;
                     transition: transform $d $f;
-                    svg {
-                        width: 100%;
-                    }
+                    padding-top: 57.84%;
                 }
                 &:hover {
                     .svg-stroke {
@@ -346,9 +342,7 @@ a.submenu-business {
                 .svg {
                     width: 18px;
                     transition: transform $d $f;
-                    svg {
-                        width: 100%;
-                    }
+                    padding-top: 57.84%;
                 }
                 &:hover {
                     .svg-stroke {

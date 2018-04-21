@@ -112,11 +112,6 @@
     left: 3px;
     top: 1px;
     width: 25px;
-    .svg {
-        svg {
-            width: 100%;
-        }
-    }
 }
 .footer-social-ico1 {
     width: 24px;
@@ -125,13 +120,22 @@
     width: 27px;
     left: 0;
     top: 3px;
+    .svg {
+        padding-top: 61.852%;
+    }
 }
 .footer-social-ico3 {
     left: 2px;
+    .svg {
+        padding-top: 80%;
+    }
 }
 .footer-social-ico4 {}
 .footer-social-ico5 {
     top: 4px;
+    .svg {
+        padding-top: 68.76%;
+    }
 }
 .footer-copyright {
     padding: 48px 0 55px;

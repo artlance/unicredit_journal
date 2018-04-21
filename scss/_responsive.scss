@@ -397,7 +397,8 @@
             font-size: 16px;
             .svg {
                 width: 15px;
-                margin-top: 3px;
+                height: 13px;
+                top: 6px;
             }
         }
     }
@@ -408,6 +409,9 @@
         .home-advice-number {
             strong {
                 font-size: 20px;
+                .svg {
+                    top: 7px;
+                }
             }
         }
     }
@@ -711,6 +715,9 @@
         .home-advice-number {
             strong {
                 font-size: 18px;
+                .svg {
+                    top: 6px;
+                }
             }
         }
     }
@@ -1093,7 +1100,7 @@
                 padding-left: 28px;
                 .svg {
                     width: 18px;
-                    margin-top: 3px;
+                    height: 16px;
                 }
             }
         }
@@ -1612,6 +1619,7 @@
     .services-order-bg {
         max-height: 65%;
         max-width: 50%;
+        left: 50%;
     }
     .services-order-content {
         padding-top: 50px;
@@ -1910,6 +1918,7 @@
         padding-top: 3px;
         .svg {
             width: 19px;
+            height: 25px;
         }
     }
     .packages-other {
@@ -2257,7 +2266,7 @@
     }
     .advices-expert-bg {
         top: 20%;
-        left: auto;
+        left: 40%;
         right: 0;
     }
     .advice-hero {
@@ -2279,21 +2288,19 @@
         left: 0;
     }
     .services-packages-list-wrapper {
-        margin-bottom: 0;
+        padding-bottom: 0;
+        .slidee {
+            li {
+                float: none;
+                margin: 0;
+                width: auto;
+                height: auto;
+            }
+        }
     }
     .services-packages-list {
-        flex-wrap: wrap;
-        padding-bottom: 0;
-    }
-    .services-packages-list-item {
-        flex: 0 0 100%;
-        max-width: 100%;
-        padding-left: 0;
-        &:first-child {
-            flex: 0 0 100%;
-            max-width: 100%;
-            padding-left: 0;
-        }
+        margin-bottom: 0;
+        height: auto !important;
     }
 }
 @media (max-width: 1024px) {
@@ -3306,6 +3313,7 @@
     }
     .advices-expert-bg {
         right: 20%;
+        left: 0;
         .svg {
             position: relative;
             left: -20%;

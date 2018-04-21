@@ -121,11 +121,13 @@
 .services-features-cta-bg {
     position: absolute;
     left: 25%;
+    right: 0;
     top: 22px;
     backface-visibility: hidden;
     .svg {
         position: relative;
         right: -4%;
+        padding-top: 117.83%;
     }
 }
 .services-registration {
@@ -500,6 +502,9 @@
     vertical-align: top;
     margin: 5px 10px 0 0;
     width: 29px;
+    .svg {
+        padding-top: 62.07%;
+    }
 }
 .services-partners {
     margin-bottom: 59px;
@@ -693,6 +698,9 @@
     margin-right: -20px;
     width: 15px;
     margin-left: 5px;
+    .svg {
+        padding-top: 129.41%;
+    }
 }
 .services-order {
     position: relative;
@@ -702,9 +710,13 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    left: 65%;
     max-height: 80%;
     overflow: hidden;
     backface-visibility: hidden;
+    .svg {
+        padding-top: 117.83%;
+    }
 }
 .services-order-content {
     position: relative;
@@ -863,6 +875,7 @@
     top: 26px;
     .svg {
         width: 11px;
+        padding-top: 57.9%;
         transition: transform $d $f;
     }
 }
@@ -973,6 +986,8 @@
             left: 3px;
             top: 5px;
             width: 15px;
+            height: 19px;
+            padding-top: 0;
             transform: rotate(90deg);
         }
     }
@@ -1169,6 +1184,8 @@
         left: 0;
         top: 0;
         width: 21px;
+        height: 27px;
+        padding-top: 0;
         transition: transform $d $f;
     }
     &:hover {
@@ -1556,6 +1573,8 @@
         left: 0;
         top: 10px;
         width: 21px;
+        height: 27px;
+        padding-top: 0;
     }
     &:hover {
         color: $lh;
@@ -1594,6 +1613,9 @@ input.search-form-text {
     top: 10px;
     right: 0;
     width: 22px;
+    .svg {
+        padding-top: 96.25%;
+    }
     &:hover {
         .svg-stroke {
             stroke: $lh;
@@ -1914,7 +1936,11 @@ input.search-form-text {
     position: absolute;
     top: 40px;
     left: 25%;
+    right: 0;
     backface-visibility: hidden;
+    .svg {
+        padding-top: 117.83%;
+    }
 }
 .advices-list {
     .home-advice {
@@ -1974,7 +2000,8 @@ input.search-form-text {
             padding-left: 32px;
             .svg {
                 width: 22px;
-                margin-top: 4px;
+                height: 20px;
+                top: 9px;
             }
         }
     }
@@ -2017,12 +2044,14 @@ input.search-form-text {
 .advice-list-bg {
     position: absolute;
     right: 0;
+    left: 0;
     bottom: 0;
     backface-visibility: hidden;
     .svg {
         position: relative;
         right: -30%;
         margin-bottom: -30%;
+        padding-top: 117.83%;
     }
 }
 .advice-item {
@@ -2063,22 +2092,11 @@ input.search-form-text {
     padding-left: 6.6667%;
 }
 .services-packages-list-wrapper {
-    margin-bottom: 32px;
-    .jspVerticalBar {
-        display: none !important;
+    padding-bottom: 2px;
+    .scrollbar {
+        background: #ededef;
     }
 }
 .services-packages-list {
-    display: flex;
-    padding-bottom: 40px;
-}
-.services-packages-list-item {
-    flex: 0 0 26.08696%;
-    max-width: 26.08696%;
-    padding-left: 4.34783%;
-    &:first-child {
-        flex: 0 0 21.73913%;
-        max-width: 21.73913%;
-        padding-left: 0;
-    }
+    margin-bottom: 40px;
 }

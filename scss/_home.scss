@@ -74,15 +74,14 @@
 .home-popular-bg {
     position: absolute;
     right: 0;
+    left: 0;
     bottom: 0;
     backface-visibility: hidden;
     .svg {
         position: relative;
         right: -30%;
         margin-bottom: -30%;
-        svg {
-            width: 100%;
-        }
+        padding-top: 117.83%;
     }
 }
 .home-popular-category {
@@ -366,15 +365,14 @@
 .home-expert-bg {
     position: absolute;
     right: 0;
+    left: 0;
     bottom: 0;
     backface-visibility: hidden;
     .svg {
         position: relative;
         right: -30%;
         margin-bottom: -60%;
-        svg {
-            width: 100%;
-        }
+        padding-top: 117.83%;
     }
 }
 .home-expert-content {
@@ -553,10 +551,10 @@
         .svg {
             position: absolute;
             left: 0;
-            top: 50%;
+            top: 7px;
             width: 19px;
-            margin-top: 4px;
-            transform: translate3d(0, -50%, 0);
+            height: 17px;
+            padding-top: 0;
         }
     }
 }

@@ -93,11 +93,53 @@ $(document).ready(function(){
 
     scrollbarHandle();
 
+    var servicesPackagesList = $('.services-packages-list');
+
+    function servicesPackFunc() {
+        var mainWidth = $('.main').innerWidth();
+        if ( mainWidth < 1235 && servicesPackagesList.length ) {
+            servicesPackagesList.sly('destroy');
+            scrollbarHandle();
+        } else {
+            servicesPackagesList.each(function(index, el) {
+                var _frame = $(this);
+                var frameWrap = _frame.parent();
+                _frame.sly({
+                    horizontal: true,
+                    itemNav: 'basic',
+                    scrollBar: frameWrap.find('.scrollbar'),
+                    scrollBy: 1,
+                    dragHandle: true,
+                    dynamicHandle: true,
+                    releaseSwing: true,
+                    startAt: 0,
+                    speed: 500,
+                    mouseDragging: true,
+                    touchDragging: true,
+                    elasticBounds: true
+                });
+            });
+            scrollbarHandle();
+        }
+    }
+    servicesPackFunc();
     $(window).resize(function() {
         if (frame.length) {
             frame.sly('reload');
             scrollbarHandle();
         }
+        if (servicesPackagesList.length) {
+            servicesPackFunc();
+        }
+    });
+
+
+    servicesPackagesList.waypoint(function(direction) {
+        setTimeout(function(){
+            servicesPackagesList.sly('toCenter', 2);
+        }, 1000);
+    }, {
+      offset: '80%'
     });
 
     //------------------------------------------------------------------------//
@@ -200,26 +242,6 @@ $(document).ready(function(){
     }
     scrollPane();
 
-    var scrollPaneResponsive = function() {
-        var mainWidth = $('.main').innerWidth();
-        if ( mainWidth < 1235 && $('.scroll-pane-responsive').length ) {
-            $('.scroll-pane-responsive').jScrollPane({showArrows: false, autoReinitialise: true, animateScroll: true, animateDuration: 1000}).data('jsp').destroy();
-        } else {
-            $('.scroll-pane-responsive').jScrollPane({showArrows: false, autoReinitialise: true, animateScroll: true, animateDuration: 1000}).data('jsp').reinitialise();
-        }
-    }
-    if ($('.scroll-pane-responsive').length) {
-        scrollPaneResponsive();
-    }
-
-    $('.scroll-pane-responsive').waypoint(function(direction) {
-        setTimeout(function(){
-            $('.scroll-pane-responsive').data('jsp').scrollTo(150);
-        }, 800);
-    }, {
-      offset: '80%'
-    });
-
     var scrollPaneResize = function() {
         if ($('.scroll-pane').length) {
             $('.scroll-pane').each(function(index, el) {
@@ -231,9 +253,6 @@ $(document).ready(function(){
     $(window).resize(function(){
         scrollPane();
         scrollPaneResize();
-        if ($('.scroll-pane-responsive').length) {
-            scrollPaneResponsive();
-        }
     });
 
     //------------------------------------------------------------------------//

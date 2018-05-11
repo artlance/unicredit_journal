@@ -43,9 +43,10 @@
         letter-spacing: -0.5px;
     }
     p {
-        font-size: 22px;
-        line-height: 28px;
+        font-size: 20px;
+        line-height: 26px;
         font-weight: 300;
+        font-family: $ft;
         color: #111111;
         padding-bottom: 26px;
     }
@@ -111,9 +112,10 @@
         margin-bottom: 15px;
     }
     p {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 1.1112;
         font-weight: 300;
+        font-family: $ft;
         opacity: 0.58;
         margin-bottom: 46px;
     }
@@ -142,9 +144,10 @@
         margin-bottom: 32px;
     }
     p {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 1.364;
         color: #111111;
+        font-family: $ft;
         font-weight: 300;
         letter-spacing: -0.3px;
         margin-bottom: 22px;
@@ -212,9 +215,10 @@
 }
 .services-registration-step-title {
     flex-grow: 1;
-    font-size: 18px;
-    line-height: 1.2223;
+    font-size: 16px;
+    line-height: 22px;
     font-weight: 300;
+    font-family: $ft;
 }
 .services-registration-img {
     margin-top: -116px;
@@ -234,7 +238,7 @@
     }
 }
 .services-package-basic {
-    margin-bottom: 57px;
+    margin-bottom: 32px;
     padding: 34px 0 37px;
     background: $s;
     color: $w;
@@ -252,6 +256,9 @@
 .services-package-basic-caption-note {
     color: #9c9a9a;
     font-weight: 300;
+    font-family: $ft;
+    font-size: 16px;
+    line-height: 24px;
     span {
         display: inline-block;
         vertical-align: top;
@@ -314,6 +321,9 @@
     display: block;
     letter-spacing: -0.25px;
     font-weight: 300;
+    font-family: $ft;
+    font-size: 16px;
+    line-height: 24px;
     color: rgba(255, 255, 255, 0.59);
 }
 .services-package-basic-more {}
@@ -326,6 +336,9 @@
         max-width: 50%;
         padding: 0 7.1429% 20px 20px;
         font-weight: 300;
+        font-family: $ft;
+        font-size: 16px;
+        line-height: 24px;
         letter-spacing: -0.2px;
         position: relative;
         &:before {
@@ -341,9 +354,12 @@
     }
 }
 .services-package {
+    padding: 25px;
     text-align: center;
     letter-spacing: -0.2px;
+    transition: background-color $d $f;
     &:hover {
+        background-color: #f2f2f2;
         .services-package-more {
             opacity: 1;
         }
@@ -354,8 +370,7 @@
     margin-bottom: 33px;
     span,
     a {
-        display: flex;
-        align-items: center;
+        display: block;
         width: 97px;
         height: 97px;
         margin: 0 auto;
@@ -363,16 +378,6 @@
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: cover;
-    }
-    img {
-        display: block;
-        margin: 0 auto;
-        width: 54px;
-    }
-}
-.services-package-img-2 {
-    img {
-        width: 49px;
     }
 }
 .services-package-title {
@@ -392,12 +397,12 @@
 }
 .services-package-toggle {}
 .services-package-title-info {
-    font-size: 18px;
-    line-height: 1.2223;
+    font-size: 16px;
+    line-height: 22px;
     font-weight: 300;
+    font-family: $ft;
     color: #696969;
     min-height: 44px;
-    padding: 0 10px;
 }
 .services-package-include {
     padding: 17px 0;
@@ -430,9 +435,10 @@
     display: inline-block;
     vertical-align: top;
     text-align: left;
-    font-size: 18px;
-    line-height: 1.2223;
+    font-size: 16px;
+    line-height: 22px;
     font-weight: bold;
+    font-family: $ft;
     color: #111111;
 }
 .services-package-options {
@@ -442,9 +448,10 @@
     display: block;
     padding: 4px 0 21px;
     li {
-        font-size: 18px;
-        line-height: 1.2223;
+        font-size: 16px;
+        line-height: 22px;
         font-weight: 300;
+        font-family: $ft;
         color: #111111;
         padding: 23px 30px 24px;
         position: relative;
@@ -465,8 +472,8 @@
         }
         span {
             display: block;
-            font-size: 16px;
-            line-height: 1.125;
+            font-size: 14px;
+            line-height: 18px;
             color: #909090;
             padding-top: 5px;
         }
@@ -568,6 +575,9 @@
 .services-partners-item-offer-note {
     display: block;
     font-weight: 300;
+    font-family: $ft;
+    font-size: 16px;
+    line-height: 24px;
 }
 .services-account {
     padding-bottom: 62px;
@@ -619,9 +629,10 @@
 .services-account-step-title {
     flex-grow: 1;
     padding-top: 10px;
-    font-size: 20px;
-    line-height: 1.2;
+    font-size: 18px;
+    line-height: 24px;
     font-weight: 300;
+    font-family: $ft;
     letter-spacing: -0.2px;
 }
 .services-account-documents {
@@ -678,9 +689,10 @@
         a {
             display: block;
             padding-right: 20px;
-            font-size: 18px;
-            line-height: 1.4445;
+            font-size: 16px;
+            line-height: 26px;
             font-weight: 300;
+            font-family: $ft;
             color: #24ada2;
             letter-spacing: -0.2px;
             &:hover {
@@ -764,9 +776,10 @@
     display: none;
 }
 .services-order-step-error {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
     font-weight: 300;
+    font-family: $ft;
     color: #fe9e9e;
     letter-spacing: -0.3px;
     padding-top: 19px;
@@ -854,9 +867,10 @@
     z-index: 2100;
     height: 53px;
     padding: 12px 30px 15px 3px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     font-weight: 300;
+    font-family: $ft;
     color: $w;
     border-bottom: 2px solid $w;
     &:hover,
@@ -898,9 +912,10 @@
         a {
             display: block;
             padding-right: 20px;
-            font-size: 18px;
+            font-size: 16px;
             line-height: 24px;
             font-weight: 300;
+            font-family: $ft;
             color: $w;
             span {
                 display: inline-block;
@@ -966,7 +981,7 @@
     }
 }
 .package-info-all {
-    margin-bottom: 43px;
+    margin-bottom: 30px;
     a {
         display: inline-block;
         vertical-align: top;
@@ -995,12 +1010,13 @@
 .package-info-caption {}
 .package-info-title {
     display: flex;
-    margin-bottom: 47px;
+    align-items: center;
+    margin-bottom: 35px;
 }
 .package-info-title-img {
     flex: 0 0 168px;
     max-width: 168px;
-    padding-right: 35px;
+    padding-right: 10px;
     img {
         display: block;
         width: 100%;
@@ -1008,7 +1024,6 @@
 }
 .package-info-title-text {
     flex-grow: 1;
-    padding-top: 12px;
     padding-right: 10px;
     h1 {
         font-size: 60px;
@@ -1037,9 +1052,10 @@
     max-width: 50%;
     padding-right: 30px;
     p {
-        font-size: 14px;
+        font-size: 13px;
         line-height: 20px;
         font-weight: 300;
+        font-family: $ft;
         color: #111111;
     }
 }
@@ -1070,7 +1086,6 @@
 .package-advantages {
     padding: 40px 0 40px 12.87%;
     h5 {
-        margin-bottom: 40px;
         font-size: 20px;
         line-height: 1.2;
         font-weight: bold;
@@ -1094,34 +1109,27 @@
 .package-advantages-list {
     display: flex;
     flex-wrap: wrap;
-    padding: 7px 0 30px;
+    padding: 20px 0 30px;
 }
 .package-advantages-item {
     flex: 0 0 50%;
     max-width: 50%;
-    padding-right: 20%;
+    padding-right: 10%;
     margin-bottom: 15px;
 }
 .package-advantages-item-img {
     display: flex;
     align-items: flex-end;
-    height: 90px;
-    margin-bottom: 8px;
+    height: 80px;
+    margin-bottom: 18px;
     img {
         display: block;
-        width: 98px;
-    }
-}
-.package-advantages-item-img-2 {
-    img {
-        width: 83px;
     }
 }
 .package-advantages-item-title {
     font-size: 16px;
     line-height: 20px;
     font-weight: bold;
-    min-height: 60px;
 }
 .package-advantages-compare {}
 .package-include {
@@ -1142,10 +1150,11 @@
     li {
         position: relative;
         padding-left: 55px;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 18px;
         font-weight: 300;
-        color: rgba(255, 255, 255, 0.3);
+        font-family: $ft;
+        color: rgba(255, 255, 255, 0.6);
         margin-bottom: 43px;
         &:before {
             content: "";
@@ -1163,6 +1172,7 @@
             line-height: 24px;
             color: $w;
             margin-bottom: 16px;
+            font-family: $ff;
         }
     }
 }
@@ -1248,22 +1258,14 @@
     display: block;
     margin-bottom: 31px;
     span {
-        display: flex;
+        display: block;
         width: 97px;
         height: 97px;
         margin: 0 auto;
-        align-items: center;
-        background: #a9bef2;
-    }
-    img {
-        display: block;
-        margin: 0 auto;
-        width: 49px;
-    }
-}
-.packages-other-item-img-2 {
-    img {
-        width: 54px;
+        background-color: #c3d1f6;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 .packages-other-item-title {
@@ -1277,9 +1279,10 @@
 }
 .packages-other-item-text {
     display: block;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 22px;
     font-weight: 300;
+    font-family: $ft;
     color: #696969;
     letter-spacing: -0.2px;
 }
@@ -1338,8 +1341,10 @@
     }
 }
 .article-hero-date {
-    font-size: 22px;
+    font-size: 20px;
+    line-height: 28px;
     font-weight: 300;
+    font-family: $ft;
     letter-spacing: -0.3px;
     position: relative;
     padding-left: 30px;
@@ -1349,7 +1354,7 @@
         top: 50%;
         left: 0;
         transform: translate3d(0, -50%, 0);
-        margin-top: 2px;
+        margin-top: 1px;
         width: 22px;
         height: 22px;
         background: url('../upload/icon-time.svg') 0 0 no-repeat;
@@ -1360,8 +1365,8 @@
     padding-bottom: 20px;
     border-bottom: 9px solid #f3f3f3;
     p {
-        font-size: 24px;
-        line-height: 30px;
+        font-size: 26px;
+        line-height: 32px;
         font-weight: 300;
         color: #010101;
         letter-spacing: -0.3px;
@@ -1399,9 +1404,9 @@
     }
 }
 .article-popular-item-title {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
-    font-weight: 300;
+    font-family: $ft;
     letter-spacing: -0.1px;
     padding-right: 35px;
     a {
@@ -1656,6 +1661,9 @@ input.search-form-text {
     flex-grow: 1;
     padding-left: 28px;
     p {
+        font-size: 16px;
+        line-height: 24px;
+        font-family: $ft;
         font-weight: 300;
         color: #111111;
         letter-spacing: -0.2px;
@@ -1735,9 +1743,10 @@ input.search-form-text {
 .all-services-hero-list {
     display: block;
     li {
-        font-size: 22px;
-        line-height: 28px;
+        font-size: 20px;
+        line-height: 26px;
         font-weight: 300;
+        font-family: $ft;
         letter-spacing: -0.2px;
         position: relative;
         padding-left: 22px;
@@ -1745,7 +1754,7 @@ input.search-form-text {
         &:before {
             content: "";
             position: absolute;
-            top: 12px;
+            top: 11px;
             left: 0;
             width: 6px;
             height: 6px;
@@ -1908,9 +1917,10 @@ input.search-form-text {
             display: block;
             padding-top: 12px;
             opacity: 0.55;
-            font-size: 20px;
-            line-height: 24px;
+            font-size: 18px;
+            line-height: 22px;
             font-weight: 300;
+            font-family: $ft;
             letter-spacing: 0.3px;
         }
         img {
@@ -1977,12 +1987,13 @@ input.search-form-text {
     margin-bottom: 20px;
 }
 .advice-hero-img {
-    max-width: 190px;
+    width: 245px;
+    height: 245px;
     margin: 0 auto;
-    img {
-        display: block;
-        width: 100%;
-    }
+    background-color: #707380;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .advice-hero-content {
     padding-right: 45px;
@@ -1995,14 +2006,11 @@ input.search-form-text {
         padding-top: 0;
         margin-right: 48px;
         strong {
-            font-size: 22px;
-            line-height: 1.3334;
+            font-size: 20px;
+            line-height: 28px;
             padding-left: 32px;
-            .svg {
-                width: 22px;
-                height: 20px;
-                top: 9px;
-            }
+            background-position: 0 50%;
+            background-size: 22px 19px;
         }
     }
     .article-hero-date {
@@ -2092,11 +2100,18 @@ input.search-form-text {
     padding-left: 6.6667%;
 }
 .services-packages-list-wrapper {
+    margin: 0 -25px;
     padding-bottom: 2px;
     .scrollbar {
         background: #ededef;
     }
+    .slidee {
+        & > li {
+            margin: 0;
+            width: 380px;
+        }
+    }
 }
 .services-packages-list {
-    margin-bottom: 40px;
+    margin-bottom: 15px;
 }

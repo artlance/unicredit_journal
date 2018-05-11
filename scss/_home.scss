@@ -56,9 +56,10 @@
     }
 }
 .home-slide-text {
-    font-size: 22px;
-    line-height: 1.273;
+    font-size: 20px;
+    line-height: 28px;
     font-weight: 300;
+    font-family: $ft;
     letter-spacing: -0.3px;
     max-height: 140px;
     overflow: hidden;
@@ -154,6 +155,9 @@
 }
 .home-popular-item-category {
     display: block;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: $ft;
     font-weight: 300;
     text-transform: uppercase;
     color: $w;
@@ -395,9 +399,10 @@
     }
 }
 .home-expert-name {
-    font-size: 22px;
-    line-height: 1.273;
+    font-size: 20px;
+    line-height: 28px;
     font-weight: 300;
+    font-family: $ft;
     margin-bottom: 18px;
 }
 .home-expert-title {
@@ -544,17 +549,12 @@
         vertical-align: top;
         position: relative;
         padding-left: 29px;
-        font-size: 20px;
-        line-height: 1.2;
+        font-size: 18px;
+        line-height: 24px;
         font-weight: 300;
+        font-family: $ft;
         color: $w;
-        .svg {
-            position: absolute;
-            left: 0;
-            top: 7px;
-            width: 19px;
-            height: 17px;
-            padding-top: 0;
-        }
+        background: url('../upload/icon-cards.svg') 0 calc(50% + 2px) no-repeat;
+        background-size: 17px 14px;
     }
 }

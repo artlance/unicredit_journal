@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="66px" height="42px" viewBox="0 0 66 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3" fill-rule="nonzero">
+            <rect id="Rectangle-path" fill="#99DADD" x="1.4" y="1.9" width="63.2" height="9.3"></rect>
+            <g id="Group" fill="#344154">
+                <g transform="translate(8.000000, 29.000000)" id="Rectangle-path">
+                    <rect x="42" y="0.1" width="7.3" height="1.5"></rect>
+                    <rect x="28.2" y="0.1" width="7.3" height="1.5"></rect>
+                    <rect x="14.5" y="0.1" width="7.3" height="1.5"></rect>
+                    <rect x="0.8" y="0.1" width="7.3" height="1.5"></rect>
+                </g>
+                <path d="M62.6,41.5 L3.4,41.5 C1.9,41.5 0.7,40.3 0.7,38.8 L0.7,3.2 C0.7,1.7 1.9,0.5 3.4,0.5 L62.7,0.5 C64.2,0.5 65.4,1.7 65.4,3.2 L65.4,38.7 C65.3,40.3 64.1,41.5 62.6,41.5 Z M3.4,2 C2.7,2 2.2,2.5 2.2,3.2 L2.2,38.7 C2.2,39.4 2.7,39.9 3.4,39.9 L62.7,39.9 C63.4,39.9 63.9,39.4 63.9,38.7 L63.9,3.2 C63.9,2.5 63.4,2 62.7,2 L3.4,2 Z" id="Shape"></path>
+                <rect id="Rectangle-path" x="1.4" y="10.5" width="63.2" height="1.5"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

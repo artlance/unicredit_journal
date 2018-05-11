@@ -17,9 +17,10 @@ input.input-text {
     float: left;
     height: 53px;
     padding: 12px 3px 15px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     font-weight: 300;
+    font-family: $ft;
     color: $w;
     border: 0;
     border-bottom: 2px solid $w;
@@ -70,9 +71,10 @@ select.select::-ms-expand {
         display: block;
         position: relative;
         padding-left: 41px;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 20px;
         font-weight: 300;
+        font-family: $ft;
         color: $w;
         letter-spacing: -0.2px;
         -webkit-touch-callout: none;
@@ -404,9 +406,12 @@ body.modal-open {
 }
 .modal-success-content {
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.2;
     font-weight: 300;
+    p {
+        font-family: $ft;
+    }
 }
 .modal-success-title {
     font-size: 48px;

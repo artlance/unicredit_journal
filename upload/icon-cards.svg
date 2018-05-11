@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="22px" viewBox="0 0 26 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>cards2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="cards2" fill="#59CCC3" fill-rule="nonzero">
+            <path d="M19.58,0 L6,0 C2.71343683,-0.000223676406 0.0383432295,2.64366049 0,5.93 L0,15.93 C0.0383432295,19.2163395 2.71343683,21.8602237 6,21.86 L19.58,21.86 C22.8665632,21.8602237 25.5416568,19.2163395 25.58,15.93 L25.58,5.93 C25.5416568,2.64366049 22.8665632,-0.000223676406 19.58,0 Z M22.58,15.92 C22.5419691,17.5494544 21.2098981,18.8504438 19.58,18.85 L6,18.85 C4.3701019,18.8504438 3.0380309,17.5494544 3,15.92 L3,5.92 C3.04336279,4.29446963 4.37389146,2.99942173 6,3 L19.58,3 C21.2098981,2.99955625 22.5419691,4.30054559 22.58,5.93 L22.58,15.92 Z" id="Shape"></path>
+            <rect id="Rectangle-path" x="6.49" y="6.47" width="12.6" height="3"></rect>
+            <rect id="Rectangle-path" x="6.49" y="12.39" width="12.6" height="3"></rect>
+        </g>
+    </g>
+</svg>

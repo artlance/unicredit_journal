@@ -43,7 +43,7 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 5000,
         speed: 500,
-        pauseOnHover: false,
+        pauseOnHover: true,
         pauseOnDotsHover: false,
         slide: '.home-slide',
         slidesToShow: 1,
@@ -62,10 +62,11 @@ $(document).ready(function(){
             var _frame = $(this);
             var frameWrap = _frame.parent();
             _frame.sly({
+                scrollSource: null,
                 horizontal: true,
                 itemNav: 'basic',
                 scrollBar: frameWrap.find('.scrollbar'),
-                scrollBy: 1,
+                scrollBy: 0,
                 dragHandle: true,
                 dynamicHandle: true,
                 releaseSwing: true,
@@ -105,10 +106,11 @@ $(document).ready(function(){
                 var _frame = $(this);
                 var frameWrap = _frame.parent();
                 _frame.sly({
+                    scrollSource: null,
                     horizontal: true,
                     itemNav: 'basic',
                     scrollBar: frameWrap.find('.scrollbar'),
-                    scrollBy: 1,
+                    scrollBy: 0,
                     dragHandle: true,
                     dynamicHandle: true,
                     releaseSwing: true,

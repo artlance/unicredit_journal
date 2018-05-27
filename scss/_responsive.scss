@@ -413,9 +413,6 @@
             }
         }
     }
-    .footer-global {
-        padding-top: 55px;
-    }
     .footer-logo {
         a {
             max-width: 228px;
@@ -427,12 +424,8 @@
         letter-spacing: 1.5px;
     }
     .footer-menu {
-        padding-top: 6px;
-        padding-bottom: 50px;
         & > li {
-            padding-bottom: 1px;
             & > a {
-                margin-bottom: 38px;
                 font-size: 16px;
             }
             ul {
@@ -482,15 +475,10 @@
         top: 3px;
     }
     .footer-copyright {
-        padding-top: 30px;
-        padding-bottom: 27px;
         p {
             font-size: 14px;
             letter-spacing: 0.3px;
         }
-    }
-    .footer-copyright-sep {
-        padding: 0 7px;
     }
     .services-hero-wrapper {
         padding: 5.64vw 0 5.16vw;
@@ -1089,9 +1077,6 @@
             }
         }
     }
-    .footer-global {
-        padding-top: 50px;
-    }
     .footer-logo {
         padding-right: 0;
         margin-bottom: 36px;
@@ -1104,11 +1089,8 @@
         font-size: 13px;
     }
     .footer-menu {
-        padding-bottom: 30px;
         & > li {
-            padding-bottom: 5px;
             & > a {
-                margin-bottom: 33px;
                 font-size: 14px;
             }
             ul {
@@ -1153,9 +1135,18 @@
         top: 4px;
     }
     .footer-copyright {
+        padding-right: 0;
         padding-bottom: 30px;
         p {
             font-size: 13px;
+        }
+    }
+    .social {
+        padding: 45px 0 40px;
+        margin-left: -30px;
+        li {
+            margin-right: 0;
+            margin-left: 30px;
         }
     }
     .services-hero {
@@ -2432,7 +2423,6 @@
         }
     }
     .footer-menu {
-        padding-bottom: 7px;
         & > li {
             flex: 0 0 100%;
             max-width: 100%;
@@ -2463,16 +2453,9 @@
             padding-left: 0;
         }
     }
-    .footer-copyright {
-        padding-top: 25px;
-    }
-    .footer-copyright-sep {
-        clear: both;
-        display: block;
-        padding: 0;
-        font-size: 0;
-        line-height: 0;
-        height: 0;
+    .social {
+        float: left;
+        padding-top: 0;
     }
     .navigation-content {
         &:before {

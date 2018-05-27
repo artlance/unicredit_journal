@@ -1,7 +1,13 @@
 /* footer */
 .footer-global {
-    padding-top: 70px;
+    padding-top: 44px;
     background: $p;
+    .footer-logo {
+        margin-bottom: 0;
+        a {
+            max-width: 200px;
+        }
+    }
 }
 .footer-logo {
     padding-right: 10px;
@@ -27,14 +33,22 @@
     letter-spacing: 2px;
     transition: color $d $f;
 }
+.footer-copyright {
+    padding: 17px 10px 40px 0;
+    p {
+        font-weight: 300;
+        color: $w;
+        letter-spacing: 0.4px;
+    }
+}
 .footer-menu {
     display: flex;
     flex-wrap: wrap;
-    padding: 9px 0 95px;
+    padding: 5px 0 10px;
     & > li {
         flex: 0 0 50%;
         max-width: 50%;
-        padding: 0 10px 3px 0;
+        padding-right: 10px;
         &.menu-disabled {
             & > a {
                 color: rgba(59, 182, 172, 0.2);
@@ -46,7 +60,7 @@
         }
         & > a {
             display: block;
-            margin-bottom: 47px;
+            margin-bottom: 34px;
             font-size: 20px;
             line-height: 1.2;
             text-transform: uppercase;
@@ -137,17 +151,47 @@
         padding-top: 68.76%;
     }
 }
-.footer-copyright {
-    padding: 48px 0 55px;
-    background: rgba(0, 0, 0, 0.1);
-    p {
-        font-weight: 300;
-        color: $w;
-        letter-spacing: 0.4px;
+.social {
+    float: right;
+    padding: 53px 0 50px;
+    li {
+        float: left;
+        margin: 0 24px 0 13px;
+        a {
+            display: flex;
+            align-items: center;
+            width: 29px;
+            height: 24px;
+            &:hover {
+                .svg-fill {
+                    fill: #68d6ce;
+                }
+            }
+            & > span {
+                display: block;
+                margin: 0 auto;
+            }
+        }
     }
 }
-.footer-copyright-sep {
-    display: inline-block;
-    vertical-align: top;
-    padding: 0 9px;
+.social-facebook {
+    width: 23px;
+}
+.social-vk {
+    width: 27px;
+    .svg {
+        padding-top: 61.852%;
+    }
+}
+.social-twitter {
+    width: 25px;
+    .svg {
+        padding-top: 80%;
+    }
+}
+.social-youtube {
+    width: 25px;
+    .svg {
+        padding-top: 68.76%;
+    }
 }

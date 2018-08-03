@@ -3300,6 +3300,15 @@
             right: 7px;
         }
     }
+    .article-new-banner {
+        padding-left: 0 !important;
+    }
+    .article-new-banner-blue {
+        margin-left: -25px;
+        margin-right: -25px;
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
 }
 @include media-breakpoint-down(xs) {    //max-width: 575px
     .home-article-x2 {

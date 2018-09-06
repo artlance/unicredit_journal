@@ -354,7 +354,7 @@
     .services-packages-list-wrapper {
         .slidee {
             & > li {
-                width: 300px;
+                width: 305px;
             }
         }
     }
@@ -2242,8 +2242,13 @@
         left: 0;
     }
     .services-packages-list-wrapper {
-        padding-bottom: 0;
         margin: 0;
+        padding: 0;
+        .scrollbar-wrapper,
+        .prev-arrow,
+        .next-arrow {
+            display: none;
+        }
         .slidee {
             & > li {
                 float: none;

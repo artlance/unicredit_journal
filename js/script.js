@@ -74,7 +74,7 @@ $(document).ready(function(){
                 speed: 500,
                 mouseDragging: true,
                 touchDragging: true,
-                elasticBounds: true
+                elasticBounds: true,
             });
         });
     }
@@ -109,8 +109,7 @@ $(document).ready(function(){
                     scrollSource: null,
                     horizontal: true,
                     itemNav: 'basic',
-                    scrollBar: frameWrap.find('.scrollbar'),
-                    scrollBy: 0,
+                    scrollBy: 1,
                     dragHandle: true,
                     dynamicHandle: true,
                     releaseSwing: true,
@@ -118,8 +117,12 @@ $(document).ready(function(){
                     speed: 500,
                     mouseDragging: true,
                     touchDragging: true,
-                    elasticBounds: true
+                    elasticBounds: true,
+                    scrollBar: frameWrap.find('.scrollbar'),
+                    prevPage: frameWrap.find('.prev-arrow'),
+                    nextPage: frameWrap.find('.next-arrow')
                 });
+                _frame.sly('reload');
             });
             scrollbarHandle();
         }
@@ -136,13 +139,13 @@ $(document).ready(function(){
     });
 
 
-    servicesPackagesList.waypoint(function(direction) {
-        setTimeout(function(){
-            servicesPackagesList.sly('toCenter', 2);
-        }, 1000);
-    }, {
-      offset: '80%'
-    });
+    // servicesPackagesList.waypoint(function(direction) {
+    //     setTimeout(function(){
+    //         servicesPackagesList.sly('toCenter', 2);
+    //     }, 1000);
+    // }, {
+    //   offset: '80%'
+    // });
 
     //------------------------------------------------------------------------//
 

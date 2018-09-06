@@ -2183,19 +2183,51 @@ input.search-form-text {
 }
 .services-packages-list-wrapper {
     margin: 0 -25px;
-    padding-bottom: 2px;
+    padding: 0 135px 2px;
+    position: relative;
+    .scrollbar-wrapper {
+        margin: 0 -135px;
+    }
     .scrollbar {
         background: #ededef;
     }
     .slidee {
         & > li {
             margin: 0;
-            width: 380px;
+            width: 313px;
         }
     }
 }
 .services-packages-list {
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
     margin-bottom: 15px;
+}
+.prev-arrow,
+.next-arrow {
+    position: absolute;
+    z-index: 2;
+    left: 25px;
+    top: 123px;
+    width: 60px;
+    height: 60px;
+    background: #59ccc3 url('../images/arrow-button-left.svg') calc(50% - 2px) 50% no-repeat;
+    background-size: 10px 17px;
+    border-radius: 50%;
+    &:hover {
+        background-color: $lh;
+    }
+    &.disabled {
+        cursor: default;
+        background-color: #e3e4e6;
+    }
+}
+.next-arrow {
+    left: auto;
+    right: 25px;
+    background-image: url('../images/arrow-button.svg');
+    background-position: calc(50% + 2px) 50%;
 }
 .article-new-banner {
     border-top: 9px solid #f3f3f3;
